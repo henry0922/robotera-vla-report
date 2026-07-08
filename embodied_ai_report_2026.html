@@ -3,8 +3,9 @@
 <head>
 <meta charset='UTF-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>robotera VLA团队调研报告-2026.05</title>
+<title>robotera VLA团队调研报告-2026.07</title>
 <style>
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', sans-serif; font-size: 13px; line-height: 1.6; color: #1a1a1a; background: #f7f7f5; }
 
@@ -84,8 +85,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica
 .ht-tag-shijiemoxing { background: #e8f8f0; color: #156a3c; }
 .ht-tag-xueshu { background: #f0eeff; color: #5b35c9; }
 .ht-tag-fangzhen { background: #e8f0fe; color: #1a56a0; }
-    .ht-tag-fangwen { background: #fff8e1; color: #f57f17; }
-    .ht-tag-lunwen { background: #e8eaf6; color: #3f51b5; }
+.ht-tag-fangwen { background: #fff8e1; color: #f57f17; }
+.ht-tag-lunwen { background: #e8eaf6; color: #3f51b5; }
 
 .hotspot-body { flex: 1; }
 .hotspot-title { font-size: 12.5px; font-weight: 500; color: #1a1a1a; margin-bottom: 2px; }
@@ -98,226 +99,243 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica
 /* ===== TEAMS ===== */
 .team-category-bar { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
 .cat-chip { padding: 6px 14px; border-radius: 20px; border: 0.5px solid rgba(0,0,0,0.12); background: transparent; font-size: 12px; cursor: pointer; color: #555; transition: all 0.15s; display: flex; align-items: center; gap: 4px; }
-.cat-chip.active { font-weight: 500; }
-.cat-chip .cat-count { font-size: 10px; padding: 1px 5px; border-radius: 8px; background: rgba(0,0,0,0.06); }
-.cat-chip.active .cat-count { background: rgba(0,0,0,0.1); }
-.cat-all.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
-.cat-all.active .cat-count { background: rgba(255,255,255,0.2); }
-.cat-cn.active { background: #fef3e2; color: #b25a00; border-color: #f5c06a; }
-.cat-intl.active { background: #e8f0fe; color: #1a56a0; border-color: #93b8f5; }
-.cat-lab.active { background: #e8f8f0; color: #156a3c; border-color: #6dc99a; }
-
-.team-tag-filters { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 14px; }
-.team-tag-btn { padding: 3px 8px; border-radius: 12px; border: 0.5px solid rgba(0,0,0,0.1); background: transparent; font-size: 10px; cursor: pointer; color: #666; transition: all 0.15s; }
-.team-tag-btn.active { font-weight: 500; }
-.team-tag-btn.f-vla.active { background: #f0eeff; color: #5b35c9; border-color: #b9a9f5; }
-.team-tag-btn.f-wm.active { background: #e8f8f0; color: #156a3c; border-color: #6dc99a; }
-.team-tag-btn.f-hw.active { background: #fef3e2; color: #b25a00; border-color: #f5c06a; }
-.team-tag-btn.f-sim.active { background: #e8f0fe; color: #1a56a0; border-color: #93b8f5; }
-.team-tag-btn.f-data.active { background: #fff0f0; color: #a31f1f; border-color: #f59393; }
-
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
-.card { background: #fff; border-radius: 10px; border: 0.5px solid rgba(0,0,0,0.08); overflow: hidden; transition: border-color 0.15s; }
-.card:hover { border-color: rgba(0,0,0,0.18); }
-.card-header { padding: 12px 14px 8px; display: flex; align-items: flex-start; gap: 10px; }
-.avatar { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; }
+.cat-chip.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+.cat-count { font-size: 11px; }
+.team-tag-filters { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
+.team-tag-btn { padding: 5px 12px; border-radius: 16px; border: 0.5px solid rgba(0,0,0,0.12); background: transparent; font-size: 11px; cursor: pointer; color: #555; transition: all 0.15s; }
+.team-tag-btn.active { border-color: #1a1a1a; background: #1a1a1a; color: #fff; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+.card { background: #fff; border-radius: 12px; border: 0.5px solid rgba(0,0,0,0.08); padding: 20px; transition: border-color 0.15s; }
+.card:hover { border-color: rgba(0,0,0,0.15); }
+.card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.avatar { width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 10px; font-size: 14px; font-weight: 600; flex-shrink: 0; }
 .av-cn { background: #fef3e2; color: #b25a00; }
 .av-intl { background: #e8f0fe; color: #1a56a0; }
 .av-lab { background: #e8f8f0; color: #156a3c; }
-.card-title { flex: 1; min-width: 0; }
-.card-title h3 { font-size: 13px; font-weight: 500; color: #1a1a1a; }
-.card-title .subtitle { font-size: 10px; color: #999; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.card-tags { display: flex; gap: 3px; flex-wrap: wrap; margin-top: 6px; }
-.tag { font-size: 9px; padding: 1px 6px; border-radius: 8px; }
+.card-title h3 { font-size: 14px; font-weight: 600; color: #1a1a1a; }
+.subtitle { font-size: 11px; color: #888; margin-top: 2px; }
+.card-tags { display: flex; gap: 4px; margin-top: 4px; }
+.tag { font-size: 10px; padding: 2px 6px; border-radius: 8px; }
 .tag-vla { background: #f0eeff; color: #5b35c9; }
 .tag-wm { background: #e8f8f0; color: #156a3c; }
 .tag-hw { background: #fef3e2; color: #b25a00; }
 .tag-sim { background: #e8f0fe; color: #1a56a0; }
 .tag-data { background: #fff0f0; color: #a31f1f; }
-
-.card-body { padding: 0 14px 10px; }
-.work-item { padding: 6px 0; border-top: 0.5px solid rgba(0,0,0,0.05); }
-.work-item:first-child { border-top: none; }
-.work-title { font-size: 11.5px; font-weight: 500; color: #1a1a1a; display: flex; align-items: flex-start; gap: 5px; }
-.work-dot { width: 4px; height: 4px; border-radius: 50%; background: #ccc; flex-shrink: 0; margin-top: 5px; }
-.work-dot-vla { background: #8b6ff5; }
-.work-dot-wm { background: #2db87a; }
-.work-dot-hw { background: #e08c30; }
-.work-dot-sim { background: #3d82e0; }
-.work-dot-data { background: #e24b4a; }
-.work-desc { font-size: 10.5px; color: #666; margin-top: 2px; margin-left: 9px; line-height: 1.5; }
-.work-meta { font-size: 9.5px; color: #aaa; margin-top: 2px; margin-left: 9px; }
-.work-link { color: #1a56a0; text-decoration: none; }
+.tag-rongzi { background: #fff0f0; color: #a31f1f; }
+.card-body { }
+.work-item { padding: 8px 0; }
+.work-title { font-size: 12.5px; font-weight: 500; color: #1a1a1a; display: flex; align-items: center; gap: 6px; }
+.work-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+.work-dot-vla { background: #5b35c9; }
+.work-dot-wm { background: #156a3c; }
+.work-dot-hw { background: #b25a00; }
+.work-dot-sim { background: #1a56a0; }
+.work-dot-data { background: #a31f1f; }
+.work-dot-rongzi { background: #a31f1f; }
+.work-desc { font-size: 11px; color: #666; line-height: 1.5; margin-top: 3px; }
+.work-meta { font-size: 10px; color: #aaa; margin-top: 4px; display: flex; align-items: center; gap: 8px; }
+.work-date { color: #999; }
+.work-link { color: #1a56a0; text-decoration: none; font-size: 10px; }
 .work-link:hover { text-decoration: underline; }
-
-.extra-items { overflow: hidden; }
+.extra-items { overflow: hidden; transition: max-height 0.3s ease; }
 .extra-items.is-collapsed { max-height: 0; }
-.extra-items.is-expanded { max-height: 9999px; transition: max-height 0.4s ease; }
-.expand-toggle { display: block; width: 100%; padding: 6px 0; margin-top: 2px; border: none; background: none; font-size: 10.5px; color: #1a56a0; cursor: pointer; text-align: center; border-top: 1px dashed rgba(0,0,0,0.06); }
-.expand-toggle:hover { color: #0d3f7a; background: rgba(26,86,160,0.03); }
+.extra-items.is-expanded { max-height: 500px; }
+.expand-toggle { font-size: 11px; color: #666; cursor: pointer; border: none; background: none; padding: 6px 0; display: block; width: 100%; text-align: center; transition: color 0.15s; }
+.expand-toggle:hover { color: #1a1a1a; }
+.empty-state { text-align: center; padding: 40px 20px; color: #888; font-size: 14px; }
 
-.empty-state { text-align: center; padding: 40px 20px; color: #aaa; font-size: 13px; }
-
-@media (max-width: 768px) {
-    .sidebar { transform: translateX(-100%); }
-    .sidebar.mobile-open { transform: translateX(0); width: 200px; }
-    .main { margin-left: 0 !important; }
-    .content { padding: 16px; }
-    .header { padding: 16px; }
-    .grid { grid-template-columns: 1fr; }
-    .search-box { width: 150px; }
-}
 </style>
 </head>
 <body>
 <div class='sidebar' id='sidebar'>
   <div class='sidebar-header'>
-    <span class='sidebar-title'>导航</span>
-    <button class='sidebar-toggle' onclick='toggleSidebar()' id='sidebarToggle' title='收起/展开'>«</button>
+    <span class='sidebar-title'>VLA调研报告</span>
+    <button class='sidebar-toggle' id='sidebarToggle' onclick='toggleSidebar()'>«</button>
   </div>
-  <nav class='sidebar-nav'>
-    <a href='#section-summary' class='active' data-nav='summary'><span class='nav-icon'>📊</span><span>核心摘要</span></a>
-    <a href='#section-hotspots' data-nav='hotspots'><span class='nav-icon'>🔥</span><span>最新热点</span></a>
-    <a href='#section-teams' data-nav='teams'><span class='nav-icon'>🏢</span><span>重要团队</span></a>
-  </nav>
+  <div class='sidebar-nav'>
+    <a href='#section-summary' data-nav='summary'><span class='nav-icon'>❖</span> <span>核心摘要</span></a>
+    <a href='#section-hotspots' data-nav='hotspots'><span class='nav-icon'>✨</span> <span>最新热点</span></a>
+    <a href='#section-teams' data-nav='teams'><span class='nav-icon'>🏠</span> <span>重要团队</span></a>
+  </div>
 </div>
 <div class='main' id='mainContent'>
 <div class='header'>
-  <h1>robotera VLA团队调研报告-2026.05</h1>
-  <p>聚焦具身大模型 / VLA / 世界模型方向 · 纯技术视角 · 信息来源：官方发布 &amp; 微信公众号</p>
+  <h1>robotera VLA团队调研报告-2026.07</h1>
+  <p>具身智能 / VLA模型 / 世界模型 / 人形机器人全调研 &middot; 更新日期 2026.07.08</p>
   <div class='meta-bar'>
-    <span class='meta-badge badge-cn'>国内企业：15</span>
-    <span class='meta-badge badge-intl'>国外企业：7</span>
-    <span class='meta-badge badge-lab'>学术机构：9</span>
-    <span class='meta-badge badge-vla'>热点动态：43条</span>
+    <span class='meta-badge badge-cn'>16家国内企业</span>
+    <span class='meta-badge badge-intl'>8家海外企业</span>
+    <span class='meta-badge badge-lab'>8家学术机构</span>
+    <span class='meta-badge badge-vla'>23条热点</span>
   </div>
 </div>
 <div class='content'>
 <div class='section-block' id='section-summary'>
-  <h2 class='section-title'>📊 核心摘要</h2>
+  <h2 class='section-title'>❖ 核心摘要</h2>
   <div class='summary-section'>
-    <h3>🔬 五大核心技术趋势</h3>
+    <h3>五大技术趋势</h3>
     <ul>
-      <li><span class='trend-num'>1</span><strong>VLA模型持续演进，架构从离散走向融合</strong><br>从早期离散化设计（BLIP-2+扩散策略）快速演进为端到端融合架构。pi0系列、Go系列、Halo、CogACT等模型不断刷新SOTA。核心趋势：VLA与世界模型深度融合（银河通用LDA、星动纪元Era0），以及隐空间推理（LaST-R1）的引入。</li>
-      <li><span class='trend-num'>2</span><strong>世界模型成为Scaling Law新范式</strong><br>从"辅助模块"升级为"统一框架"。Ctrl-World、GigaWorld-1、UniVLA、LDA等方案证明：在隐空间中统一世界模型与VLA能有效利用全域数据，突破传统VLA的数据瓶颈。WUM架构成为自变量WALL-B的核心技术底座。</li>
-      <li><span class='trend-num'>3</span><strong>数据飞轮加速：从遥操作到Ego-centric大规模采集</strong><br>Ego-centric（第一人称视角）数据因采集效率和规模成本优势成为行业热点。灵初智能SynData数据集（10万小时）下载量突破1.46万次。Build AI的EgoBuilder、GenRobot的GenEgoData推动数据标准化。</li>
-      <li><span class='trend-num'>4</span><strong>跨本体泛化：单策略适配多机器人本体</strong><br>银河通用LDA-1B首次实现"单策略多本体"泛化。Google RT-X、pi0/π0.5、千问Go Plus均在跨本体评测中取得突破。趋势：从"每机器人每任务单独训练"走向"一个模型控制所有机器人"。</li>
-      <li><span class='trend-num'>5</span><strong>商业落地加速：从Demo到规模化部署</strong><br>Figure AI在物流仓库连续作业100小时+，处理13万+包裹。智元机器人宣布人形机器人综合成本已低于人工。自变量家庭机器人5月25日正式进入真实家庭。1X Technologies建成人形机器人工厂。</li>
-    </ul>
+<li><span class='trend-num'>1</span><strong>VLA模型演进：从端到端到类脑架构，中国模型首次登顶全球评测</strong><br/>2026年上半年VLA模型架构经历三代跃迁：端到端VLA(π0.7/Figure Helix)→增强型VLA(千寻Spirit v1.6/银河通用LDA-1B)→类脑VLA(智平方NeuroVLA)。千寻Spirit v1.6(2026.06)首次登顶RoboArena全球第一，力压英伟达Cosmos3和PI Pi0.5，标志着中国VLA模型在真实世界数据训练路线上取得突破。智平方NeuroVLA(2026.06)仿生"皮层-小脑-脊髓"三层架构，运动抖动降低75%，开创类脑VLA新范式。Physical Intelligence π0.7(2026.04)展现组合泛化涌现能力，成为当前最强VLA基座。</li>
+<li><span class='trend-num'>2</span><strong>世界模型回归：从独立路线到VLA体系核心组件</strong><br/>2026年世界模型不再是VLA的竞争路线，而是融入VLA体系的核心组件。星海图Fast-WAM(2026.06)驱动机器人前瞻性规划；极佳视界GigaBrain-0.5M*(2026.02)以世界模型预测未来状态驱动决策，叠衣冲咖啡接近100%成功率；NVIDIA Cosmos 3(2026.05)作为全球首个开源物理AI基础模型，打通视觉、语言、动作、物理模拟全模态；银河通用LDA-1B的WAM架构在隐空间统一世界模型与VLA。智平方CEO郭彦东在智源大会定调："世界模型不是VLA的竞争路线，而是VLA体系中的核心组件"。</li>
+<li><span class='trend-num'>3</span><strong>数据范式革命：虚实共融与全量数据摄入打破标注依赖</strong><br/>银河通用LDA-1B(2026.05)首创"全量数据摄入"范式，首次实现虚拟仿真和真实数据、有无标注的异构数据统一训练，1小时跨本体自适应。千寻Spirit v1.6以真实世界数据训练击败硅谷巨头的仿真训练模型，证明"在真实世界摸爬滚打"胜过"在仿真环境学走路"。NVIDIA Cosmos 3+Isaac Lab-Arena提供开源仿真评测体系，LeRobot集成降低开发门槛。北大-灵初PKU-SynData-10K等合成数据集持续丰富训练资源。</li>
+<li><span class='trend-num'>4</span><strong>量产元年加速：从万台到1.5万台，人形机器人商业化进入冲刺期</strong><br/>智元机器人(2026.06)第1.5万台精灵G2下线，不足3月从1万台到1.5万台，6天直播99.99%成功率刷新全球纪录。宇树科技(2026.07)科创板IPO注册获批，104天闪电过会，A股将迎来"具身智能第一股"。Tesla Optimus(2026.07)Fremont产线启动，7-8月低量生产。Figure 03(2026.06)正式部署BMW Spartanburg工厂物流排序。1X NEO(2026.06)首批消费者交付，全球首款家用人形机器人进入家庭。《中国具身智能产业发展报告》(2026.07)预计市场规模达1.09万亿元。</li>
+<li><span class='trend-num'>5</span><strong>融资狂潮：机器人大脑取代机器人本体成为资本新焦点</strong><br/>2026年上半年融资重心从"造机器人本体"转向"机器人大脑"。千寻智能3个月融资近50亿(估值200亿+)；自变量机器人2个月4轮融资估值200亿；智平方系列融资近50亿(估值200亿)；星动纪元2026年累计近50亿；极佳视界3个月融资35亿；宇树科技IPO拟募资42亿。海外Skild AI(2026.01)14亿美元C轮估值$14B。全球8家具身智能企业估值突破200亿(中国6家)，25家估值达100亿级别。VLA模型、世界模型及其融合路线成为融资核心焦点。</li>
+</ul>
   </div>
   <div class='summary-section'>
-    <h3>🏢 商业布局全景</h3>
+    <h3>商业布局动态</h3>
     <div class='biz-grid'>
-      <div class='biz-item'>
-        <div class='biz-region'>🇨🇳 中国</div>
-        <div class='biz-trend'>趋势：产业化加速，家庭场景率先破局</div>
-        <div class='biz-players'>银河通用（工业落地）、自变量（家庭率先）、智元（成本低于人工）、星动纪元（RoboChallenge榜首）、灵初智能（人类数据范式）</div>
-      </div>
-      <div class='biz-item'>
-        <div class='biz-region'>🇺🇸 美国</div>
-        <div class='biz-trend'>趋势：大模型公司领跑，工业场景深度验证</div>
-        <div class='biz-players'>Figure AI（物流分拣直播验证）、Physical Intelligence（pi0.5开源）、1X Technologies（NEO Gamma量产）、Skild AI（Skild Brain基础模型）</div>
-      </div>
-      <div class='biz-item'>
-        <div class='biz-region'>🌍 全球学术</div>
-        <div class='biz-trend'>趋势：世界模型+VLA协同演进，开源生态繁荣</div>
-        <div class='biz-players'>Stanford（Behavior-1K）、UC Berkeley（数字表亲）、CMU（形态无关操控）、清华（RynnBrain）、北大（DaVinciTrader）</div>
-      </div>
-      <div class='biz-item'>
-        <div class='biz-region'>🏭 落地场景</div>
-        <div class='biz-trend'>趋势：工业→物流→家庭，三波浪潮依次推进</div>
-        <div class='biz-players'>工业（宁德时代+银河通用）、物流（Figure AI仓库分拣）、家庭（自变量5月25日交付）、零售（银河通用OpenEra-Store）</div>
-      </div>
-    </div>
+<div class='biz-item'><div class='biz-region'>中国国内</div><div class='biz-trend'>量产冲刺+资本狂潮</div><div class='biz-players'>智元(1.5万台)、宇树(IPO)、银河通用(200亿)、千寻(全球第一)、自变量(200亿)、智平方(NeuroVLA)、星海图(G0.5)、星动纪元(50亿)、极佳视界(35亿)</div></div>
+<div class='biz-item'><div class='biz-region'>海外市场</div><div class='biz-trend'>工厂部署+家庭交付</div><div class='biz-players'>Figure(BMW工厂)、Tesla(Optimus产线)、1X(NEO家庭交付)、NVIDIA(Cosmos 3)、PI(π0.7)、Genesis(GENE-26.5)、Skild(14亿C轮)</div></div>
+<div class='biz-item'><div class='biz-region'>学术前沿</div><div class='biz-trend'>评测标准+开源生态</div><div class='biz-players'>清华(LDA-1B)、北大(VLA综述)、Stanford(Ego-Pi)、UCBerkeley(RoboArena)、智源(SoulAgent)、西湖(MOE-VLA)</div></div>
+</div>
   </div>
 </div>
 <div class='section-block' id='section-hotspots'>
-  <h2 class='section-title'>🔥 最新热点</h2>
+  <h2 class='section-title'>✨ 最新热点</h2>
   <div class='hotspot-controls'>
     <input class='search-box' placeholder='搜索热点...' oninput='filterHotspots(this.value)'>
     <div class='hs-filter-group'>
-      <button class='hs-filter' onclick='toggleHsFilter(this, "世界模型")'>世界模型</button><button class='hs-filter' onclick='toggleHsFilter(this, "产品")'>产品</button><button class='hs-filter' onclick='toggleHsFilter(this, "仿真")'>仿真</button><button class='hs-filter' onclick='toggleHsFilter(this, "学术")'>学术</button><button class='hs-filter' onclick='toggleHsFilter(this, "家庭")'>家庭</button><button class='hs-filter' onclick='toggleHsFilter(this, "开源")'>开源</button><button class='hs-filter' onclick='toggleHsFilter(this, "技术")'>技术</button><button class='hs-filter' onclick='toggleHsFilter(this, "数据集")'>数据集</button><button class='hs-filter' onclick='toggleHsFilter(this, "生态")'>生态</button><button class='hs-filter' onclick='toggleHsFilter(this, "直播")'>直播</button><button class='hs-filter' onclick='toggleHsFilter(this, "硬件")'>硬件</button><button class='hs-filter' onclick='toggleHsFilter(this, "融资")'>融资</button><button class='hs-filter' onclick='toggleHsFilter(this, "评测")'>评测</button>
-    </div>
+<button class='hs-filter' onclick='toggleHsFilter(this, "技术")'>技术</button> <button class='hs-filter' onclick='toggleHsFilter(this, "融资")'>融资</button> <button class='hs-filter' onclick='toggleHsFilter(this, "产品")'>产品</button> <button class='hs-filter' onclick='toggleHsFilter(this, "评测")'>评测</button> <button class='hs-filter' onclick='toggleHsFilter(this, "开源")'>开源</button> <button class='hs-filter' onclick='toggleHsFilter(this, "世界模型")'>世界模型</button> <button class='hs-filter' onclick='toggleHsFilter(this, "采访")'>采访</button> <button class='hs-filter' onclick='toggleHsFilter(this, "直播")'>直播</button> <button class='hs-filter' onclick='toggleHsFilter(this, "生态")'>生态</button> <button class='hs-filter' onclick='toggleHsFilter(this, "论文")'>论文</button></div>
   </div>
   <div class='hotspot-list'>
-<div class='hotspot-list'>
-    <div class='hotspot-item' data-hs-tag='论文'>
-      <span class='hotspot-date'>2026.05.14</span>
-      <span class='hotspot-tag ht-tag-lunwen'>论文</span>
+<div class='hotspot-item' data-hs-tag='生态'>
+      <span class='hotspot-date'>2026.07.07</span>
+      <span class='hotspot-tag ht-tag-shengtai'>生态</span>
       <div class='hotspot-body'>
-        <div class='hotspot-title'>Figure AI 物流分拣100小时直播技术解析</div>
-        <div class='hotspot-desc'>三台Figure 03连续作业100小时+，累计处理超13万个包裹，零人工干预，展现VLA模型规模化部署能力。</div>
-        <a class='hotspot-link' href='https://www.figure.ai' target='_blank'>→ Figure AI官网</a>
+        <div class='hotspot-title'>WAIC 2026即将开幕：1100+企业参展，具身赛道汇聚200+企业</div>
+        <div class='hotspot-desc'>7月17-20日上海举办，展览面积首破10万平方米，300+全球首发产品，华为Atlas 950真机亮相</div>
+        <a class='hotspot-link' href='https://news.qq.com/rain/a/20260707A04Y0D00' target='_blank'>→ 腾讯新闻</a>
       </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.05.10</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
+    </div><div class='hotspot-item' data-hs-tag='融资'>
+      <span class='hotspot-date'>2026.07.06</span>
+      <span class='hotspot-tag ht-tag-rongzi'>融资</span>
       <div class='hotspot-body'>
-        <div class='hotspot-title'>姚顺宇4小时深度访谈：从清华物理到Google DeepMind</div>
-        <div class='hotspot-desc'>谷歌DeepMind研究科学家姚顺宇做客《张小珺Jun｜商业访谈录》，横跨技术、产业与个人选择，分享AI研究前沿思考。</div>
-        <a class='hotspot-link' href='https://news.qq.com/rain/a/20260513A09DDP00' target='_blank'>→ 腾讯新闻</a>
+        <div class='hotspot-title'>星动纪元完成10亿元新一轮融资，2026年累计近50亿</div>
+        <div class='hotspot-desc'>清华系具身智能公司2个月密集融资25亿元，顺丰、中国邮政持续加码</div>
+        <a class='hotspot-link' href='https://www.163.com/dy/article/L15N8ODO05198NMR.html' target='_blank'>→ 网易科技</a>
       </div>
-    </div><div class='hotspot-item' data-hs-tag='论文'>
-      <span class='hotspot-date'>2026.04.17</span>
-      <span class='hotspot-tag ht-tag-lunwen'>论文</span>
+    </div><div class='hotspot-item' data-hs-tag='产品'>
+      <span class='hotspot-date'>2026.07.04</span>
+      <span class='hotspot-tag ht-tag-chanpin'>产品</span>
       <div class='hotspot-body'>
-        <div class='hotspot-title'>Physical Intelligence发布π0.7：具有涌现能力的可引导VLA模型</div>
-        <div class='hotspot-desc'>π0.7首次展现组合泛化能力，能将不同任务中学到的技能重新组合解决新问题，如用新厨房工具完成烹饪任务。</div>
-        <a class='hotspot-link' href='https://www.pi.website/blog/pi07' target='_blank'>→ pi.website</a>
+        <div class='hotspot-title'>云迹科技具身智能单臂协作机器人亮相全球数字经济大会</div>
+        <div class='hotspot-desc'>VLA端到端统一架构，集成感知内嵌推演、常识认知推理五大核心技术</div>
+        <a class='hotspot-link' href='https://finance.sina.com.cn/tech/roll/2026-07-04/doc-inifqweh3418790.shtml' target='_blank'>→ 新浪科技</a>
       </div>
-    </div><div class='hotspot-item' data-hs-tag='技术'>
-      <span class='hotspot-date'>2026.04.10</span>
+    </div><div class='hotspot-item' data-hs-tag='评测'>
+      <span class='hotspot-date'>2026.07.02</span>
+      <span class='hotspot-tag ht-tag-pingce'>评测</span>
+      <div class='hotspot-body'>
+        <div class='hotspot-title'>《中国具身智能产业发展报告(2026)》发布：市场规模预计1.09万亿元</div>
+        <div class='hotspot-desc'>中国已成全球增长最快市场，2018年2133亿到2026年预计1.09万亿，年均复合增长率22-23%</div>
+        <a class='hotspot-link' href='https://www.stcn.com/article/detail/3994551.html' target='_blank'>→ 证券时报</a>
+      </div>
+    </div><div class='hotspot-item' data-hs-tag='融资'>
+      <span class='hotspot-date'>2026.07.02</span>
+      <span class='hotspot-tag ht-tag-rongzi'>融资</span>
+      <div class='hotspot-body'>
+        <div class='hotspot-title'>宇树科技科创板IPO注册获批，104天闪电过会</div>
+        <div class='hotspot-desc'>3月20日受理、6月1日过会、7月2日注册获批，A股将迎来"具身智能第一股"，拟募资42.02亿</div>
+        <a class='hotspot-link' href='https://baijiahao.baidu.com/s?id=1869968747747361884' target='_blank'>→ 百度百家</a>
+      </div>
+    </div><div class='hotspot-item' data-hs-tag='产品'>
+      <span class='hotspot-date'>2026.07.01</span>
+      <span class='hotspot-tag ht-tag-chanpin'>产品</span>
+      <div class='hotspot-body'>
+        <div class='hotspot-title'>Tesla Optimus产线启动：Musk晒Fremont工厂团队合影</div>
+        <div class='hotspot-desc'>Optimus Gen-3低量生产7-8月启动，Model S/X产线已转产机器人，Giga Texas大型工厂在建</div>
+        <a class='hotspot-link' href='https://www.teslarati.com/tesla-optimus-project-fires-up-musk-sees-production-line-progress/' target='_blank'>→ Teslarati</a>
+      </div>
+    </div><div class='hotspot-item' data-hs-tag='融资'>
+      <span class='hotspot-date'>2026.06.29</span>
+      <span class='hotspot-tag ht-tag-rongzi'>融资</span>
+      <div class='hotspot-body'>
+        <div class='hotspot-title'>自变量机器人连续完成4轮融资，估值突破200亿</div>
+        <div class='hotspot-desc'>2个多月完成B轮/B+/B++/C轮四轮融资并全部交割，投资方超30家，估值从百亿跃升至200亿</div>
+        <a class='hotspot-link' href='https://fund.eastmoney.com/a/202607073796678662.html' target='_blank'>→ 东方财富</a>
+      </div>
+    </div><div class='hotspot-item' data-hs-tag='融资'>
+      <span class='hotspot-date'>2026.06.29</span>
+      <span class='hotspot-tag ht-tag-rongzi'>融资</span>
+      <div class='hotspot-body'>
+        <div class='hotspot-title'>智平方完成近50亿元系列融资，估值超200亿</div>
+        <div class='hotspot-desc'>深圳具身智能独角兽一年累计13轮融资，AlphaBrain+AlphaBot产品线推进量产交付</div>
+        <a class='hotspot-link' href='https://baijiahao.baidu.com/s?id=1869430282289626017' target='_blank'>→ 百度百家</a>
+      </div>
+    </div><div class='hotspot-item' data-hs-tag='产品'>
+      <span class='hotspot-date'>2026.06.28</span>
+      <span class='hotspot-tag ht-tag-chanpin'>产品</span>
+      <div class='hotspot-body'>
+        <div class='hotspot-title'>智元第1.5万台机器人下线，6天直播成功率99.99%</div>
+        <div class='hotspot-desc'>精灵G2交付龙旗科技3C产线，不足3月从1万台到1.5万台，刷新全球人形机器人量产纪录</div>
+        <a class='hotspot-link' href='https://finance.sina.com.cn/roll/2026-06-28/doc-inieykzn3656593.shtml' target='_blank'>→ 科创板日报</a>
+      </div>
+    </div><div class='hotspot-item' data-hs-tag='产品'>
+      <span class='hotspot-date'>2026.06.25</span>
+      <span class='hotspot-tag ht-tag-chanpin'>产品</span>
+      <div class='hotspot-body'>
+        <div class='hotspot-title'>BMW正式部署Figure 03于Spartanburg工厂物流排序任务</div>
+        <div class='hotspot-desc'>继Figure 02车身车间试点后，Figure 03承担从非标容器中精准抓取零部件的物流复杂排序</div>
+        <a class='hotspot-link' href='https://www.press.bmwgroup.com/global/article/detail/T0458778EN/' target='_blank'>→ BMW官方</a>
+      </div>
+    </div><div class='hotspot-item' style="display:none" data-hs-tag='世界模型'>
+      <span class='hotspot-date'>2026.06.25</span>
+      <span class='hotspot-tag ht-tag-shijiemoxing'>世界模型</span>
+      <div class='hotspot-body'>
+        <div class='hotspot-title'>文远知行GENESIS连获两项国际大奖：AI Breakthrough+ATTI仿真创新奖</div>
+        <div class='hotspot-desc'>WeRide GENESIS世界模型获2026 AI Breakthrough Awards "年度最佳生成式AI综合解决方案"</div>
+        <a class='hotspot-link' href='https://so.html5.qq.com/page/real/search_news?docid=70000021_6606a3d2ed876752' target='_blank'>→ 腾讯新闻</a>
+      </div>
+    </div><div class='hotspot-item' style="display:none" data-hs-tag='技术'>
+      <span class='hotspot-date'>2026.06.15</span>
       <span class='hotspot-tag ht-tag-jishu'>技术</span>
       <div class='hotspot-body'>
-        <div class='hotspot-title'>灵初智能Psi-R2和Psi-W0模型发布</div>
-        <div class='hotspot-desc'>Psi-R2是首个使用10万小时级人类数据训练的VLA模型，在灵巧操作任务上取得SOTA，与SynData协同形成数据-模型闭环。</div>
-        <a class='hotspot-link' href='https://www.psibot.com' target='_blank'>→ 灵初智能官网</a>
+        <div class='hotspot-title'>智平方发布全球首个类脑VLA架构NeuroVLA</div>
+        <div class='hotspot-desc'>仿生"皮层-小脑-脊髓"三层分工协同，运动抖动降低75%，碰撞后20ms反射响应，AlphaBrain Platform同步开源</div>
+        <a class='hotspot-link' href='https://www.jiemian.com/article/14586417.html' target='_blank'>→ 界面新闻</a>
       </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.03.29</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
+    </div><div class='hotspot-item' style="display:none" data-hs-tag='产品'>
+      <span class='hotspot-date'>2026.06.11</span>
+      <span class='hotspot-tag ht-tag-chanpin'>产品</span>
       <div class='hotspot-body'>
-        <div class='hotspot-title'>许华哲"破壳"访谈：家庭机器人聚焦物体传递，具身智能迎技术突破</div>
-        <div class='hotspot-desc'>破壳机器人创始人、清华交叉信息研究院助理教授许华哲在AI未来论坛分享家庭机器人落地路径，展望2026年具身智能技术突破。</div>
-        <a class='hotspot-link' href='https://www.sohu.com/a/1002906207_121924584' target='_blank'>→ 搜狐科技</a>
+        <div class='hotspot-title'>1X NEO首批消费者交付：全球首款家用人形机器人进入家庭</div>
+        <div class='hotspot-desc'>NEO Home Robot定价$5.5万，Redwood AI驱动，折叠衣物、整理房间等家务任务，持续学习进化</div>
+        <a class='hotspot-link' href='https://www.1x.tech/neo' target='_blank'>→ 1X官网</a>
       </div>
-    </div><div class='hotspot-item' data-hs-tag='技术'>
-      <span class='hotspot-date'>2026.03.19</span>
-      <span class='hotspot-tag ht-tag-jishu'>技术</span>
+    </div><div class='hotspot-item' style="display:none" data-hs-tag='评测'>
+      <span class='hotspot-date'>2026.06.03</span>
+      <span class='hotspot-tag ht-tag-pingce'>评测</span>
       <div class='hotspot-body'>
-        <div class='hotspot-title'>Physical Intelligence发布RL Token：在线强化学习实现精准操作</div>
-        <div class='hotspot-desc'>RLT方法专门改进需要细粒度操作的精密微妙任务，仅需几分钟到几小时真实世界经验即可完成学习，速度较π*0.6提升3倍。</div>
-        <a class='hotspot-link' href='https://vuink.com/post/culfvpnyvagryyvtrapr-d-dpbzcnal/research/rlt' target='_blank'>→ PI Research</a>
+        <div class='hotspot-title'>千寻Spirit v1.6登顶RoboArena全球第一，力压英伟达Cosmos3和PI Pi0.5</div>
+        <div class='hotspot-desc'>首个登顶具身智能权威评测的中国模型，真实世界数据训练击败仿真环境训练的硅谷巨头</div>
+        <a class='hotspot-link' href='https://www.sohu.com/a/1031461279_532789' target='_blank'>→ 搜狐科技</a>
       </div>
-    </div><div class='hotspot-item' data-hs-tag='技术'>
-      <span class='hotspot-date'>2026.03.03</span>
-      <span class='hotspot-tag ht-tag-jishu'>技术</span>
+    </div><div class='hotspot-item' style="display:none" data-hs-tag='融资'>
+      <span class='hotspot-date'>2026.06.03</span>
+      <span class='hotspot-tag ht-tag-rongzi'>融资</span>
       <div class='hotspot-body'>
-        <div class='hotspot-title'>Physical Intelligence发布MEM：VLAs with Long and Short-Term Memory</div>
-        <div class='hotspot-desc'>MEM系统结合密集短期视觉token与压缩长期语言摘要，使VLA模型能够解决需要长达15分钟记忆跨度的任务，有效应对部分可观测性。</div>
-        <a class='hotspot-link' href='https://www.pi.website/research/memory' target='_blank'>→ pi.website</a>
+        <div class='hotspot-title'>千寻智能完成15亿元A+轮融资，3个月累计融资近50亿</div>
+        <div class='hotspot-desc'>云锋基金、顺为资本、红杉中国等一线基金入局，估值从百亿跃升至200亿以上</div>
+        <a class='hotspot-link' href='https://fund.eastmoney.com/a/202606033758465889.html' target='_blank'>→ 东方财富</a>
       </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.03.16</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
+    </div><div class='hotspot-item' style="display:none" data-hs-tag='开源'>
+      <span class='hotspot-date'>2026.06.01</span>
+      <span class='hotspot-tag ht-tag-kaiyuan'>开源</span>
       <div class='hotspot-body'>
-        <div class='hotspot-title'>谢赛宁7小时马拉松访谈：世界模型的黎明</div>
-        <div class='hotspot-desc'>纽约大学助理教授谢赛宁做客《张小珺Jun｜商业访谈录》，深度探讨世界模型、逃离硅谷、反抗大模型同质化等前沿话题。</div>
-        <a class='hotspot-link' href='https://siryzhang.github.io/7h-marathon-interview-xie-saining/' target='_blank'>→ 访谈实录</a>
+        <div class='hotspot-title'>NVIDIA发布Isaac GR00T N1.7人形机器人参考平台（学术版）</div>
+        <div class='hotspot-desc'>面向学术研究的完整软硬件参考平台，新VLM backbone(Cosmos-Reason2-2B/Qwen3-VL)，LeRobot集成</div>
+        <a class='hotspot-link' href='https://blogs.nvidia.cn/blog/nvidia-open-humanoid-robot-reference-design/' target='_blank'>→ NVIDIA官方</a>
       </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.01.06</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
+    </div><div class='hotspot-item' style="display:none" data-hs-tag='开源'>
+      <span class='hotspot-date'>2026.05.31</span>
+      <span class='hotspot-tag ht-tag-kaiyuan'>开源</span>
       <div class='hotspot-body'>
-        <div class='hotspot-title'>马斯克2026年开年访谈：Grok 5、AGI时间表与人形机器人</div>
-        <div class='hotspot-desc'>马斯克在Moonshots#220节目中分享xAI旗下Grok 5最新进展，明确2026年一季度发布，重点攻克数学、物理、化学等硬科学领域。</div>
-        <a class='hotspot-link' href='https://view.inews.qq.com/a/20260113A03GKP00' target='_blank'>→ 腾讯新闻</a>
+        <div class='hotspot-title'>NVIDIA Cosmos 3发布：全球首个开源物理AI基础模型</div>
+        <div class='hotspot-desc'>GTC台北/COMPUTEX 2026发布，Mixture-of-Transformers架构，打通视觉、语言、动作、物理模拟全模态</div>
+        <a class='hotspot-link' href='https://www.iyouyu.tech/p/nvidia-cosmos-3-physical-ai/' target='_blank'>→ 技术解读</a>
       </div>
-    </div>
-    
-
-    <!-- 新增采访/论文热点 -->
-    <div class='hotspot-item' data-hs-tag='采访'>
+    </div><div class='hotspot-item' style="display:none" data-hs-tag='采访'>
       <span class='hotspot-date'>2026.05.21</span>
       <span class='hotspot-tag ht-tag-fangwen'>采访</span>
       <div class='hotspot-body'>
@@ -325,15 +343,23 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica
         <div class='hotspot-desc'>Google DeepMind CEO谈Gemini Omni、AGI时间线与AI安全治理</div>
         <a class='hotspot-link' href='https://finance.sina.com.cn/tech/digi/2026-05-20/doc-inhynmhx1949022.shtml' target='_blank'>→ 新浪科技</a>
       </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
+    </div><div class='hotspot-item' style="display:none" data-hs-tag='采访'>
       <span class='hotspot-date'>2026.05.19</span>
       <span class='hotspot-tag ht-tag-fangwen'>采访</span>
       <div class='hotspot-body'>
-        <div class='hotspot-title'>Andrej Karpathy 官宣加入Anthropic，领导预训练团队</div>
+        <div class='hotspot-title'>Andrej Karpathy官宣加入Anthropic，领导预训练团队</div>
         <div class='hotspot-desc'>OpenAI联合创始人、前Tesla Autopilot负责人正式加盟Claude团队</div>
         <a class='hotspot-link' href='https://techstartups.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropic-to-advance-claude-ai-research/' target='_blank'>→ TechStartups</a>
       </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
+    </div><div class='hotspot-item' style="display:none" data-hs-tag='直播'>
+      <span class='hotspot-date'>2026.05.14</span>
+      <span class='hotspot-tag ht-tag-zhibo'>直播</span>
+      <div class='hotspot-body'>
+        <div class='hotspot-title'>Figure 03三台机器人物流分拣100小时直播</div>
+        <div class='hotspot-desc'>Bob、Frank、Gary连续作业100小时+，累计处理超13万个包裹，零人工干预</div>
+        <a class='hotspot-link' href='https://www.figure.ai' target='_blank'>→ Figure AI官网</a>
+      </div>
+    </div><div class='hotspot-item' style="display:none" data-hs-tag='采访'>
       <span class='hotspot-date'>2026.05.14</span>
       <span class='hotspot-tag ht-tag-fangwen'>采访</span>
       <div class='hotspot-body'>
@@ -341,813 +367,297 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica
         <div class='hotspot-desc'>从清华物理天才到AI前沿，"英雄主义时代已经过去"</div>
         <a class='hotspot-link' href='https://www.bilibili.com/video/BV1YR5E6EE9o/' target='_blank'>→ B站视频</a>
       </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.05.12</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>陈建宇对话星动纪元：28岁清华博导的具身智能商业化路径</div>
-        <div class='hotspot-desc'>3个月内完成两轮共20亿元融资，估值突破100亿元</div>
-        <a class='hotspot-link' href='https://news.qq.com/rain/a/20260313A03KO000' target='_blank'>→ 腾讯新闻</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.05.12</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>沈劭劼百人会论坛演讲：智驾将转型为移动物理AI基础设施</div>
-        <div class='hotspot-desc'>卓驭科技CEO谈"原生多模态基础模型"与物理AI终局</div>
-        <a class='hotspot-link' href='https://www.eet-china.com/mp/a487183.html' target='_blank'>→ EET China</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
+    </div><div class='hotspot-item' style="display:none" data-hs-tag='技术'>
       <span class='hotspot-date'>2026.05.10</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>姚顺宇4小时深度访谈文字总结：从清华到Anthropic的AI之旅</div>
-        <div class='hotspot-desc'>30句话概括Agent、大模型训练、技术预测的核心理念</div>
-        <a class='hotspot-link' href='https://news.qq.com/rain/a/20260513A09DDP00' target='_blank'>→ 腾讯新闻</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.04.27</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>专访许华哲「破壳机器人」：家庭机器人时代将至，两年内产品或问世</div>
-        <div class='hotspot-desc'>前星海图首席科学家创业，聚焦家庭场景具身智能落地</div>
-        <a class='hotspot-link' href='https://www.sohu.com/a/1015113581_362225' target='_blank'>→ 搜狐科技</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='论文'>
-      <span class='hotspot-date'>2026.04.17</span>
-      <span class='hotspot-tag ht-tag-lunwen'>论文</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Physical Intelligence π0.7发布：具有涌现能力的可引导VLA模型</div>
-        <div class='hotspot-desc'>通过引导机制实现零样本任务适配，模型能力随规模涌现</div>
-        <a class='hotspot-link' href='https://www.pi.website' target='_blank'>→ PI官网</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.04.17</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Sergey Levine播客访谈：机器人革命的真正路径没人谈</div>
-        <div class='hotspot-desc'>PI联合创始人谈为何通用机器人需要海量跨本体数据，而非完美单一机器</div>
-        <a class='hotspot-link' href='https://appliedsciencecommons.net/artifacts/49530764/331-sergey-levine/50429487/' target='_blank'>→ Applied Science</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.04.13</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>李飞飞深度访谈：空间智能是AI的下一个十年</div>
-        <div class='hotspot-desc'>World Labs创始人谈为何AI需要理解三维世界，不只是语言</div>
-        <a class='hotspot-link' href='https://news.qq.com/rain/a/20260212A02F2X00' target='_blank'>→ 腾讯新闻</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.04.02</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Sam Altman最新访谈剧透：AGI两年内降临，GPT-6将实现质的飞跃</div>
-        <div class='hotspot-desc'>OpenAI CEO谈个性化记忆、算力扩张与AI安全治理框架</div>
-        <a class='hotspot-link' href='https://k.sina.com.cn/article_7879848900_1d5acf3c401902vzig.html' target='_blank'>→ 新浪财经</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.03.31</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Sergey Levine做客Invest Like the Best：构建物理世界的LLM</div>
-        <div class='hotspot-desc'>UC Berkeley教授、PI联合创始人深度阐述机器人基础模型训练范式</div>
-        <a class='hotspot-link' href='https://www.podbean.com/media/share/dir-mahpq-2c656827' target='_blank'>→ Podbean</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.03.31</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Sam Altman 2026路线图访谈：OpenAI想赢的不是下一次发布会</div>
-        <div class='hotspot-desc'>谈GPT-5实用主义转型、企业级市场与融资集中度问题</div>
-        <a class='hotspot-link' href='https://m.36kr.com/p/3602192365044743' target='_blank'>→ 36氪</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.03.29</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>对话许华哲：进家的机器人，先做好这10件事</div>
-        <div class='hotspot-desc'>破壳机器人创始人谈家庭场景数据获取、安全边界与技术路线选择</div>
-        <a class='hotspot-link' href='https://news.qq.com/rain/a/20260427A04GYS00' target='_blank'>→ 腾讯新闻</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.03.19</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Physical Intelligence发布RL Token：在线强化学习的精准操作</div>
-        <div class='hotspot-desc'>将强化学习token引入VLA架构，实现高precision机器人操作任务</div>
-        <a class='hotspot-link' href='https://www.pi.website/research/rlt' target='_blank'>→ PI官网</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.03.16</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>谢赛宁7小时马拉松访谈（B站）：世界模型的黎明</div>
-        <div class='hotspot-desc'>逃出硅谷、AM I ABS、与Yann LeCun和李飞飞的学术路线之争</div>
-        <a class='hotspot-link' href='https://www.bilibili.com/list/ml53220646?oid=116236243435948&bvid=BV1tew5zVEDf' target='_blank'>→ B站视频</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.03.16</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>黄仁勋GTC 2026主题演讲：推理时代到来，Vera Rubin架构发布</div>
-        <div class='hotspot-desc'>英伟达CEO阐述物理AI如何从虚拟实验室走向万亿级工业生产</div>
-        <a class='hotspot-link' href='https://blogs.nvidia.cn/blog/nvidia-ceo-jensen-huang-and-global-technology-leaders-to-showcase-age-of-ai-at-gtc-2026/' target='_blank'>→ NVIDIA官方博客</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.03.03</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Physical Intelligence发布MEM：具有长短期记忆的VLA模型</div>
-        <div class='hotspot-desc'>赋予机器人跨episode记忆能力，实现任务级持续学习</div>
-        <a class='hotspot-link' href='https://www.pi.website/research/mem' target='_blank'>→ PI官网</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.03.03</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Yann LeCun最新访谈：LLM时代即将落幕，世界模型才是未来</div>
-        <div class='hotspot-desc'>图灵奖得主离职Meta前警告：大模型是死路，下一代AI需要世界模型</div>
-        <a class='hotspot-link' href='https://www.163.com/dy/article/KT645BQB05568W0A.html' target='_blank'>→ 网易科技</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.01.28</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Sam Altman 2026路线图：GPT-6将至，个性化记忆是重点</div>
-        <div class='hotspot-desc'>OpenAI CEO透露下一代模型将超越GPT-5.2，重点转向实用性和个性化</div>
-        <a class='hotspot-link' href='https://cloud.tencent.com/developer/article/2625007' target='_blank'>→ 腾讯云</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.01.26</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>银河通用王鹤做客上海科技大学：未来五年机器人技能将"百花齐放"</div>
-        <div class='hotspot-desc'>具身智能生产力新纪元，人形机器人"成本账"与真实场景落地挑战</div>
-        <a class='hotspot-link' href='https://so.html5.qq.com/page/real/search_news?docid=70000021_41069d9bfc687852' target='_blank'>→ 腾讯新闻</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2026.01.06</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>马斯克2026年开年访谈：特斯拉FSD、Optimus与xAI的最新进展</div>
-        <div class='hotspot-desc'>特斯拉CEO谈自动驾驶、人形机器人工厂部署与Grok大模型路线图</div>
-        <a class='hotspot-link' href='https://www.teslarati.com' target='_blank'>→ Teslarati</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='采访'>
-      <span class='hotspot-date'>2025.12.03</span>
-      <span class='hotspot-tag ht-tag-fangwen'>采访</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Ilya Sutskever重磅3万字访谈：AI告别规模化时代，SSI只做一件事</div>
-        <div class='hotspot-desc'>前OpenAI首席科学家谈模型泛化、持续学习、RL与预训练局限、超级智能路径</div>
-        <a class='hotspot-link' href='https://www.36kr.com/p/3569150467119488' target='_blank'>→ 36氪</a>
-      </div>
-    </div>
-
-<div class='hotspot-item' data-hs-tag='评测'>
-      <span class='hotspot-date'>2026.05.20</span>
-      <span class='hotspot-tag ht-tag-pingce'>评测</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>星动纪元Era0登顶RoboChallenge Table30榜首</div>
-        <div class='hotspot-desc'>成功率64.33%、过程分76.34分，17项桌面灵巧操作任务中斩获第一</div>
-        <a class='hotspot-link' href='https://robochallenge.org' target='_blank'>→ RoboChallenge官网</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='融资'>
-      <span class='hotspot-date'>2026.05.19</span>
-      <span class='hotspot-tag ht-tag-rongzi'>融资</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>星海图独家领投鲸跃动力数千万元种子轮</div>
-        <div class='hotspot-desc'>鲸跃动力以"数据+模型+末端执行"闭环提供Robo Labor</div>
-        <a class='hotspot-link' href='https://news.pedaily.cn/202605/564081.shtml' target='_blank'>→ 投资界</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='直播'>
-      <span class='hotspot-date'>2026.05.14</span>
-      <span class='hotspot-tag ht-tag-zhibo'>直播</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Figure AI开启物流分拣超长直播，最终运行100小时+</div>
-        <div class='hotspot-desc'>三台Figure 03机器人累计处理超13万个包裹，零人工干预</div>
-        <a class='hotspot-link' href='https://www.figure.ai' target='_blank'>→ Figure AI官网</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='数据集'>
-      <span class='hotspot-date'>2026.05.13</span>
-      <span class='hotspot-tag ht-tag-shujuji'>数据集</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>灵初智能SynData数据集下载量达1.46万次</div>
-        <div class='hotspot-desc'>业界最大灵巧手全模态数据集，总数据储备达10万小时</div>
-        <a class='hotspot-link' href='https://huggingface.co/datasets/PsiBotAI/SynData' target='_blank'>→ HuggingFace</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='硬件'>
-      <span class='hotspot-date'>2026.05.12</span>
-      <span class='hotspot-tag ht-tag-yingjian'>硬件</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>宇树科技发布全球首款量产载人变形机甲GD01</div>
-        <div class='hotspot-desc'>定价390万元起，同步开放全球首个人形机器人App Store</div>
-        <a class='hotspot-link' href='https://www.unitree.com' target='_blank'>→ 宇树官网</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='技术'>
-      <span class='hotspot-date'>2026.05.11</span>
       <span class='hotspot-tag ht-tag-jishu'>技术</span>
       <div class='hotspot-body'>
-        <div class='hotspot-title'>至简动力联合北大、港中文发布LaST-R1框架</div>
-        <div class='hotspot-desc'>平均成功率99.9%刷新LIBERO SOTA，引入潜空间物理推理</div>
-        <a class='hotspot-link' href='https://arxiv.org/abs/2505.07416' target='_blank'>→ arXiv</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='生态'>
-      <span class='hotspot-date'>2026.05.07</span>
-      <span class='hotspot-tag ht-tag-shengtai'>生态</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>宇树科技开放人形机器人任务动作应用商店</div>
-        <div class='hotspot-desc'>开发者可上传、下载机器人任务动作包</div>
-        <a class='hotspot-link' href='https://www.unitree.com' target='_blank'>→ 宇树官网</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='家庭'>
-      <span class='hotspot-date'>2026.05.04</span>
-      <span class='hotspot-tag ht-tag-jiating'>家庭</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>自变量机器人宣布5月25日新一代家庭机器人交付</div>
-        <div class='hotspot-desc'>搭载WALL-B模型，开启"机器人进家庭"元年</div>
-        <a class='hotspot-link' href='https://www.variablebots.com' target='_blank'>→ 自变量官网</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='开源'>
-      <span class='hotspot-date'>2026.05.04</span>
-      <span class='hotspot-tag ht-tag-kaiyuan'>开源</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>智源研究院RoboBrain 2.0开放世界感知能力升级</div>
-        <div class='hotspot-desc'>支持开放词汇场景理解、物体功能推理、长时序任务规划</div>
-        <a class='hotspot-link' href='https://www.baaivision.org' target='_blank'>→ 智源官网</a>
-      </div>
-    </div><div class='hotspot-item' data-hs-tag='技术'>
-      <span class='hotspot-date'>2026.04.29</span>
-      <span class='hotspot-tag ht-tag-jishu'>技术</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>银河通用发布LDA-1B跨本体世界-动作基础模型</div>
-        <div class='hotspot-desc'>1.6B参数，首次实现WAM统一框架，登顶RSS 2026</div>
+        <div class='hotspot-title'>银河通用LDA-1B开源：跨本体WAM登顶RSS 2026</div>
+        <div class='hotspot-desc'>1.6B参数世界-动作融合模型，首次实现虚实数据统一训练，1小时跨本体自适应，性能提升48%</div>
         <a class='hotspot-link' href='https://www.galbot.com' target='_blank'>→ 银河通用官网</a>
       </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='数据集'>
-      <span class='hotspot-date'>2026.04.25</span>
-      <span class='hotspot-tag ht-tag-shujuji'>数据集</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Build AI发布EgoBuilder大规模Ego-centric数据采集工具</div>
-        <div class='hotspot-desc'>支持RGB+深度+触觉多模态第一人称视角数据采集</div>
-        <a class='hotspot-link' href='https://www.buildai.com' target='_blank'>→ Build AI官网</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='家庭'>
-      <span class='hotspot-date'>2026.04.22</span>
-      <span class='hotspot-tag ht-tag-jiating'>家庭</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>自变量发布WALL-B模型，官宣家庭落地时间表</div>
-        <div class='hotspot-desc'>WALL-B是全球首个基于WUM架构的具身大模型</div>
-        <a class='hotspot-link' href='https://www.variablebots.com' target='_blank'>→ 自变量官网</a>
-      </div>
     </div><div class='hotspot-item' style="display:none" data-hs-tag='技术'>
-      <span class='hotspot-date'>2026.04.20</span>
+      <span class='hotspot-date'>2026.05.06</span>
       <span class='hotspot-tag ht-tag-jishu'>技术</span>
       <div class='hotspot-body'>
-        <div class='hotspot-title'>Figure AI发布Helix语言-视觉-动作统一模型</div>
-        <div class='hotspot-desc'>将LLM、视觉理解和动作控制统一到单一架构</div>
-        <a class='hotspot-link' href='https://www.figure.ai' target='_blank'>→ Figure AI官网</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='技术'>
-      <span class='hotspot-date'>2026.04.17</span>
-      <span class='hotspot-tag ht-tag-jishu'>技术</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Physical Intelligence pi0.5实现开放世界泛化</div>
-        <div class='hotspot-desc'>模型权重与训练代码全面开源</div>
-        <a class='hotspot-link' href='https://www.pi.website' target='_blank'>→ pi website</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='产品'>
-      <span class='hotspot-date'>2026.04.17</span>
-      <span class='hotspot-tag ht-tag-chanpin'>产品</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>智元机器人发布4款新品，宣布成本低于人工</div>
-        <div class='hotspot-desc'>远征A3、灵犀S2、绝尘C5、精灵E1，2026年营收目标5亿元</div>
-        <a class='hotspot-link' href='https://www.agibot.com' target='_blank'>→ 智元官网</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='技术'>
-      <span class='hotspot-date'>2026.04.15</span>
-      <span class='hotspot-tag ht-tag-jishu'>技术</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Google DeepMind发布Gemini Robotics-ER 1.6</div>
-        <div class='hotspot-desc'>专为具身智能设计的推理优先模型</div>
-        <a class='hotspot-link' href='https://deepmind.google' target='_blank'>→ Google DeepMind</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='数据集'>
-      <span class='hotspot-date'>2026.04.10</span>
-      <span class='hotspot-tag ht-tag-shujuji'>数据集</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>灵初智能开源10万小时人类操作全模态数据集</div>
-        <div class='hotspot-desc'>Psi-R2是首个使用10万小时级人类数据训练的VLA模型</div>
-        <a class='hotspot-link' href='https://www.psibot.com' target='_blank'>→ 灵初智能官网</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='仿真'>
-      <span class='hotspot-date'>2026.04.07</span>
-      <span class='hotspot-tag ht-tag-fangzhen'>仿真</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Genesis 3.0发布，支持万级环境并行仿真</div>
-        <div class='hotspot-desc'>全新微分物理引擎，Python-first API</div>
-        <a class='hotspot-link' href='https://genesis-world.com' target='_blank'>→ Genesis官网</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='学术'>
-      <span class='hotspot-date'>2026.03.28</span>
-      <span class='hotspot-tag ht-tag-xueshu'>学术</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>ICRA 2026 RoboChallenge竞赛正式开赛</div>
-        <div class='hotspot-desc'>Table30评测成为衡量具身模型落地能力的行业标尺</div>
-        <a class='hotspot-link' href='https://www.icra2026.org' target='_blank'>→ ICRA 2026</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='技术'>
-      <span class='hotspot-date'>2026.03.20</span>
-      <span class='hotspot-tag ht-tag-jishu'>技术</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>千问机器人发布G0 Tiny 0.5B端侧VLA模型</div>
-        <div class='hotspot-desc'>全球首个亚十亿参数VLA模型</div>
-        <a class='hotspot-link' href='https://github.com/QwenLM/Qwen2.5-VL' target='_blank'>→ GitHub</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='世界模型'>
-      <span class='hotspot-date'>2026.03.15</span>
-      <span class='hotspot-tag ht-tag-shijiemoxing'>世界模型</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>极佳视界发布GigaWorld-1世界生成模型</div>
-        <div class='hotspot-desc'>10B参数，超越Genie 2和DreamerV3</div>
-        <a class='hotspot-link' href='https://www.jijiasj.com' target='_blank'>→ 极佳视界官网</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='数据集'>
-      <span class='hotspot-date'>2026.03.10</span>
-      <span class='hotspot-tag ht-tag-shujuji'>数据集</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Ego-centric数据成为具身智能行业热点</div>
-        <div class='hotspot-desc'>在数据维度、采集效率与规模化成本之间展现独特优势</div>
-        <a class='hotspot-link' href='https://zhuanlan.zhihu.com/p/2038205185806349624' target='_blank'>→ 知乎专栏</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='学术'>
-      <span class='hotspot-date'>2026.03.05</span>
-      <span class='hotspot-tag ht-tag-xueshu'>学术</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>清华大学RynnBrain 2.0发布</div>
-        <div class='hotspot-desc'>融合神经网络感知与符号推理</div>
-        <a class='hotspot-link' href='https://www.tsinghua.edu.cn' target='_blank'>→ 清华大学官网</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='融资'>
-      <span class='hotspot-date'>2026.02.28</span>
-      <span class='hotspot-tag ht-tag-rongzi'>融资</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>银河通用完成25亿元B轮融资</div>
-        <div class='hotspot-desc'>估值突破200亿元，宁德时代、比亚迪、小米产投入局</div>
-        <a class='hotspot-link' href='https://www.36kr.com' target='_blank'>→ 36氪</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='产品'>
-      <span class='hotspot-date'>2026.02.20</span>
-      <span class='hotspot-tag ht-tag-chanpin'>产品</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>1X Technologies NEO Gamma开启量产交付</div>
-        <div class='hotspot-desc'>定价5.5万美元，3个月建成机器人工厂</div>
-        <a class='hotspot-link' href='https://1x.tech' target='_blank'>→ 1X官网</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='技术'>
-      <span class='hotspot-date'>2026.02.15</span>
-      <span class='hotspot-tag ht-tag-jishu'>技术</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Stanford MOO发布多本体操作最优匹配框架</div>
-        <div class='hotspot-desc'>在9种机器人本体上实现统一策略训练</div>
-        <a class='hotspot-link' href='https://stanford.edu' target='_blank'>→ Stanford</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='数据集'>
-      <span class='hotspot-date'>2026.02.10</span>
-      <span class='hotspot-tag ht-tag-shujuji'>数据集</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>北大-灵初联合发布PKU-SynData-10K</div>
-        <div class='hotspot-desc'>1万条高保真厨房场景合成数据</div>
-        <a class='hotspot-link' href='https://www.pku.edu.cn' target='_blank'>→ 北京大学官网</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='开源'>
-      <span class='hotspot-date'>2026.02.05</span>
-      <span class='hotspot-tag ht-tag-kaiyuan'>开源</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Hugging Face LeRobot 2.0发布</div>
-        <div class='hotspot-desc'>新增30+机器人本体原生支持</div>
-        <a class='hotspot-link' href='https://huggingface.co/blog/lerobot-v2' target='_blank'>→ Hugging Face</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='学术'>
-      <span class='hotspot-date'>2026.01.25</span>
-      <span class='hotspot-tag ht-tag-xueshu'>学术</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>UC Berkeley发布数字表亲框架</div>
-        <div class='hotspot-desc'>大幅降低跨本体Sim2Real差距</div>
-        <a class='hotspot-link' href='https://berkeley.edu' target='_blank'>→ UC Berkeley</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='融资'>
-      <span class='hotspot-date'>2026.01.20</span>
-      <span class='hotspot-tag ht-tag-rongzi'>融资</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>星动纪元完成近5亿元A轮融资</div>
-        <div class='hotspot-desc'>鼎晖VGC和海尔资本联合领投</div>
-        <a class='hotspot-link' href='https://www.robotera.com' target='_blank'>→ 星动纪元官网</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='技术'>
-      <span class='hotspot-date'>2026.01.15</span>
-      <span class='hotspot-tag ht-tag-jishu'>技术</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Nvidia发布Isaac Lab 5.0</div>
-        <div class='hotspot-desc'>万卡级GPU并行训练</div>
-        <a class='hotspot-link' href='https://developer.nvidia.com/isaac' target='_blank'>→ Nvidia</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='数据集'>
-      <span class='hotspot-date'>2026.01.10</span>
-      <span class='hotspot-tag ht-tag-shujuji'>数据集</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Google发布Open X-Embodiment 2.0</div>
-        <div class='hotspot-desc'>200万+真实机器人轨迹</div>
-        <a class='hotspot-link' href='https://ai.googleblog.com' target='_blank'>→ Google Research</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='学术'>
-      <span class='hotspot-date'>2025.12.20</span>
-      <span class='hotspot-tag ht-tag-xueshu'>学术</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>北大DaVinciTrader发布</div>
-        <div class='hotspot-desc'>融合交易推理与机器人决策</div>
-        <a class='hotspot-link' href='https://www.pku.edu.cn' target='_blank'>→ 北京大学官网</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='开源'>
-      <span class='hotspot-date'>2025.12.15</span>
-      <span class='hotspot-tag ht-tag-kaiyuan'>开源</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>西湖大学MOE-VLA开源</div>
-        <div class='hotspot-desc'>混合专家架构突破数据瓶颈</div>
-        <a class='hotspot-link' href='https://www.westlake.edu.cn' target='_blank'>→ 西湖大学官网</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='硬件'>
-      <span class='hotspot-date'>2025.12.10</span>
-      <span class='hotspot-tag ht-tag-yingjian'>硬件</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Boston Dynamics Atlas 2.0发布</div>
-        <div class='hotspot-desc'>全电动设计+强化学习控制</div>
-        <a class='hotspot-link' href='https://www.bostondynamics.com' target='_blank'>→ Boston Dynamics</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='数据集'>
-      <span class='hotspot-date'>2025.12.05</span>
-      <span class='hotspot-tag ht-tag-shujuji'>数据集</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>GenRobot发布GenEgoData大规模Ego-centric数据集</div>
-        <div class='hotspot-desc'>5万小时第一人称视角机器人操作数据</div>
-        <a class='hotspot-link' href='https://www.genrobot.com' target='_blank'>→ GenRobot</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='学术'>
-      <span class='hotspot-date'>2025.11.28</span>
-      <span class='hotspot-tag ht-tag-xueshu'>学术</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>CMU发布形态无关操控研究</div>
-        <div class='hotspot-desc'>零样本跨本体迁移取得突破</div>
-        <a class='hotspot-link' href='https://www.ri.cmu.edu' target='_blank'>→ CMU</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='技术'>
-      <span class='hotspot-date'>2025.11.20</span>
-      <span class='hotspot-tag ht-tag-jishu'>技术</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>中科院自动化所VLA-R1发布</div>
-        <div class='hotspot-desc'>融合世界模型与强化学习</div>
-        <a class='hotspot-link' href='https://www.ia.cas.cn' target='_blank'>→ 中科院</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='产品'>
-      <span class='hotspot-date'>2025.11.15</span>
-      <span class='hotspot-tag ht-tag-chanpin'>产品</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>智在无界RynnBrain 2.0发布</div>
-        <div class='hotspot-desc'>100+城商业落地，日订单突破500万</div>
-        <a class='hotspot-link' href='https://www.raill.ai' target='_blank'>→ 智在无界官网</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='融资'>
-      <span class='hotspot-date'>2025.11.10</span>
-      <span class='hotspot-tag ht-tag-rongzi'>融资</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Skild AI完成3亿美元A轮融资</div>
-        <div class='hotspot-desc'>估值突破10亿美元，卡内基梅隆背景</div>
-        <a class='hotspot-link' href='https://techcrunch.com' target='_blank'>→ TechCrunch</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='技术'>
-      <span class='hotspot-date'>2025.11.05</span>
-      <span class='hotspot-tag ht-tag-jishu'>技术</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>鹏城实验室VidMan发布</div>
-        <div class='hotspot-desc'>视频驱动具身操作新范式</div>
-        <a class='hotspot-link' href='https://www.pcl.ac.cn' target='_blank'>→ 鹏城实验室</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='学术'>
-      <span class='hotspot-date'>2025.10.28</span>
-      <span class='hotspot-tag ht-tag-xueshu'>学术</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>Stanford Behavior-1K数据集发布</div>
-        <div class='hotspot-desc'>1000种日常行为120万+视频片段</div>
-        <a class='hotspot-link' href='https://behavior.stanford.edu' target='_blank'>→ Stanford</a>
-      </div>
-    </div><div class='hotspot-item' style="display:none" data-hs-tag='开源'>
-      <span class='hotspot-date'>2025.10.20</span>
-      <span class='hotspot-tag ht-tag-kaiyuan'>开源</span>
-      <div class='hotspot-body'>
-        <div class='hotspot-title'>千问机器人G0系列全面开源</div>
-        <div class='hotspot-desc'>G0/Plus/Tiny三款模型，GitHub 9.8k+星</div>
-        <a class='hotspot-link' href='https://github.com/QwenLM/Qwen2.5-VL' target='_blank'>→ GitHub</a>
+        <div class='hotspot-title'>Genesis AI发布GENE-26.5：首个机器人基础模型系统</div>
+        <div class='hotspot-desc'>单模型让机器人自主打蛋、弹钢琴、切番茄、解魔方，全程1倍速自主运行，前1x副总裁Eric加盟</div>
+        <a class='hotspot-link' href='https://robohub.app/zh/news/genesis-ai-gene-26-5-robot-manipulation' target='_blank'>→ RoboHub</a>
       </div>
     </div>
   </div>
-  <button class='load-more-btn' id='loadMoreBtn' onclick='loadMoreHotspots()'>↓ 加载更多 (33条)</button>
+  <button class='load-more-btn' id='loadMoreBtn' onclick='loadMoreHotspots()'>↓ 加载更多 (13条)</button>
 </div>
 <div class='section-block' id='section-teams'>
-  <h2 class='section-title'>🏢 重要团队</h2>
+  <h2 class='section-title'>🏠 重要团队</h2>
   <div class='team-category-bar'>
-    <button class='cat-chip cat-all active' onclick='filterCategory("all", this)'>全部 <span class='cat-count'>31</span></button>
-    <button class='cat-chip cat-cn' onclick='filterCategory("cn", this)'>国内企业 <span class='cat-count'>15</span></button>
-    <button class='cat-chip cat-intl' onclick='filterCategory("intl", this)'>国外企业 <span class='cat-count'>7</span></button>
-    <button class='cat-chip cat-lab' onclick='filterCategory("lab", this)'>学术机构 <span class='cat-count'>9</span></button>
+    <button class='cat-chip cat-all active' onclick='filterCategory("all", this)'>全部 <span class='cat-count'>32</span></button>
+    <button class='cat-chip cat-cn' onclick='filterCategory("cn", this)'>国内企业 <span class='cat-count'>16</span></button>
+    <button class='cat-chip cat-intl' onclick='filterCategory("intl", this)'>国外企业 <span class='cat-count'>8</span></button>
+    <button class='cat-chip cat-lab' onclick='filterCategory("lab", this)'>学术机构 <span class='cat-count'>8</span></button>
   </div>
   <div class='team-tag-filters'>
     <button class='team-tag-btn f-vla' onclick='toggleTeamTag(this, "vla")'>VLA</button>
     <button class='team-tag-btn f-wm' onclick='toggleTeamTag(this, "wm")'>世界模型</button>
-    <button class='team-tag-btn f-hw' onclick='toggleTeamTag(this, "hw")'>硬件</button>
+    <button class='team-tag-btn f-hw' onclick='toggleTeamTag(this, "hw")'>硬乓</button>
     <button class='team-tag-btn f-sim' onclick='toggleTeamTag(this, "sim")'>仿真</button>
     <button class='team-tag-btn f-data' onclick='toggleTeamTag(this, "data")'>数据</button>
   </div>
   <div class='grid'>
-    <div class='card' data-type='cn' data-tags='vla wm hw'>
+<div class='card' data-type='cn' data-tags='vla wm hw'>
       <div class='card-header'>
         <div class='avatar av-cn'>银</div>
         <div class='card-title'>
           <h3>银河通用 (Galbot)</h3>
-          <div class='subtitle'>LDA-1B · Galbot S1工业落地 · 25亿元B轮</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-wm'>WM</span><span class='tag tag-hw'>HW</span></div>
+          <div class='subtitle'>LDA-1B · Galbot S1量产 · 25亿元B轮</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-wm'>WM</span> <span class='tag tag-hw'>HW</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-vla'></span>LDA-1B开源，登顶RSS 2026</div>
-        <div class='work-desc'>1.6B参数WAM（World-Action Model）框架，首次在隐空间统一世界模型与VLA，支持虚实共融数据利用与跨本体泛化。在桌面操作、双臂协同等任务全面超越同参数模型。</div>
+        <div class='work-title'><span class='work-dot work-dot-vla'></span>LDA-1B开源，跨本体WAM登顶RSS 2026</div>
+        <div class='work-desc'>1.6B参数WAM（World-Action Model）框架，首次在隐空间统一世界模型与VLA，虚实共融数据利用与跨本体泛化。1小时跨本体自适应，性能提升48%。</div>
         <div class='work-meta'><span class='work-date'>2026.05.10</span> <a class='work-link' href='https://www.galbot.com' target='_blank'>→ 银河通用官网</a></div>
       </div>
       <div class="extra-items is-collapsed"><div class='work-item'>
             <div class='work-title'><span class='work-dot work-dot-hw'></span>Galbot S1投产量产，已进入宁德时代产线</div>
-            <div class='work-desc'>零遥操、全自主重载人形机器人，双臂最大负载50kg，在宁德时代电池生产线完成实际作业。2026年量产目标1000台，同步推进OpenEra-Store零售场景。</div>
+            <div class='work-desc'>零遥操、全自主重载人形机器人，双臂最大负载50kg，在宁德时代电池生产线完成实际作业。2026年量产目标1000台。</div>
             <div class='work-meta'><span class='work-date'>2026.03.01</span> <a class='work-link' href='https://www.galbot.com' target='_blank'>→ 银河通用官网</a></div>
           </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-hw'></span>完成25亿元B轮融资，估值突破200亿</div>
-            <div class='work-desc'>宁德时代、比亚迪、小米产投等产业资本入局，本轮融资创国内具身智能单轮最高纪录。资金将用于量产扩建和模型研发。</div>
+            <div class='work-title'><span class='work-dot work-dot-rongzi'></span>完成25亿元B轮融资，估值突破200亿</div>
+            <div class='work-desc'>宁德时代、比亚迪、小米产投等产业资本入局，创国内具身智能单轮最高纪录。</div>
             <div class='work-meta'><span class='work-date'>2026.02.28</span> <a class='work-link' href='https://www.36kr.com' target='_blank'>→ 36氪</a></div>
-          </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-wm'></span>AstraBrain银河星脑大模型持续迭代</div>
-            <div class='work-desc'>全球首个融合大脑-小脑-神经三层端到端架构的具身大模型，实现高阶任务理解、精细控制与实时执行的统一。</div>
-            <div class='work-meta'><span class='work-date'>2025.12.15</span> <a class='work-link' href='https://www.galbot.com' target='_blank'>→ 银河通用官网</a></div>
           </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (3)</button>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (2)</button>
       </div>
-    </div><div class='card' data-type='cn' data-tags='vla wm hw'>
+    </div><div class='card' data-type='cn' data-tags='vla'>
       <div class='card-header'>
         <div class='avatar av-cn'>自</div>
         <div class='card-title'>
-          <h3>自变量机器人</h3>
-          <div class='subtitle'>WALL-B · 5月25日家庭交付</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-wm'>WM</span><span class='tag tag-hw'>HW</span></div>
+          <h3>自变量机器人 (XVAR)</h3>
+          <div class='subtitle'>通用VLA大模型 · 4轮融资估值200亿</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-hw'></span>新一代家庭机器人正式交付首批用户</div>
-        <div class='work-desc'>搭载WALL-B模型的家庭服务机器人进入真实家庭环境，支持整理、打扫、取物等日常家务。成为行业首个规模化进入家庭的产品。</div>
-        <div class='work-meta'><span class='work-date'>2026.05.25</span> <a class='work-link' href='https://www.variablebots.com' target='_blank'>→ 自变量官网</a></div>
+        <div class='work-title'><span class='work-dot work-dot-rongzi'></span>连续完成B轮/B+/B++/C轮四轮融资，估值突破200亿</div>
+        <div class='work-desc'>2个多月密集融资并全部交割，投资方超30家，估值从百亿跃升至200亿。专注通用具身智能大模型自主研发。</div>
+        <div class='work-meta'><span class='work-date'>2026.06.29</span> <a class='work-link' href='https://fund.eastmoney.com/a/202607073796678662.html' target='_blank'>→ 东方财富</a></div>
       </div>
       <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>WALL-B模型发布：全球首个WUM架构具身大模型</div>
-            <div class='work-desc'>基于WUM（World Unified Model）架构，标志从传统VLA迈向原生多模态统一融合，在仿真评测中多项指标领先。</div>
-            <div class='work-meta'><span class='work-date'>2026.04.22</span> <a class='work-link' href='https://www.variablebots.com' target='_blank'>→ 自变量官网</a></div>
+            <div class='work-title'><span class='work-dot work-dot-vla'></span>发布通用具身智能大模型XVAR</div>
+            <div class='work-desc'>端到端VLA架构，支持多场景跨本体泛化操作，在工业装配和家庭场景完成验证。</div>
+            <div class='work-meta'><span class='work-date'>2026.04.27</span> <a class='work-link' href='https://www.sina.com.cn' target='_blank'>→ 新浪财经</a></div>
           </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-hw'></span>家庭机器人硬件平台升级发布</div>
-            <div class='work-desc'>针对家居环境完成硬件迭代，提升导航精度和操作稳定性，优化人机安全交互设计。</div>
-            <div class='work-meta'><span class='work-date'>2026.03.15</span> <a class='work-link' href='https://www.variablebots.com' target='_blank'>→ 自变量官网</a></div>
+            <div class='work-title'><span class='work-dot work-dot-rongzi'></span>10亿元A++轮融资，字节跳动、红杉中国领投</div>
+            <div class='work-desc'>2026年开年最大融资，字节、红杉领投，累计融资超30亿。</div>
+            <div class='work-meta'><span class='work-date'>2026.01.13</span> <a class='work-link' href='https://m.36kr.com/p/3636080421586182' target='_blank'>→ 36氪</a></div>
           </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (2)</button>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (2)</button>
       </div>
-    </div><div class='card' data-type='cn' data-tags='vla wm'>
+    </div><div class='card' data-type='cn' data-tags='vla'>
       <div class='card-header'>
-        <div class='avatar av-cn'>星</div>
+        <div class='avatar av-cn'>千</div>
         <div class='card-title'>
-          <h3>星动纪元 (Robotera)</h3>
-          <div class='subtitle'>Era0登顶RoboChallenge · A轮近5亿</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-wm'>WM</span></div>
+          <h3>千寻智能 (SpiritAI)</h3>
+          <div class='subtitle'>Spirit v1.6全球第一 · 3个月融资近50亿</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-vla'></span>Era0登顶RoboChallenge Table30榜首</div>
-        <div class='work-desc'>成功率64.33%、过程分76.34分，17项桌面灵巧操作任务中斩获第一。唯一在"做素食三明治""擦桌子"等高难度任务中取得非零成功率的模型。</div>
-        <div class='work-meta'><span class='work-date'>2026.05.20</span> <a class='work-link' href='https://www.robotera.com' target='_blank'>→ 星动纪元官网</a></div>
+        <div class='work-title'><span class='work-dot work-dot-vla'></span>Spirit v1.6登顶RoboArena全球第一，力压英伟达Cosmos3和PI Pi0.5</div>
+        <div class='work-desc'>首个登顶具身智能权威评测的中国模型，真实世界数据训练击败仿真训练的硅谷巨头，综合得分92.7。</div>
+        <div class='work-meta'><span class='work-date'>2026.06.03</span> <a class='work-link' href='https://www.sohu.com/a/1031461279_532789' target='_blank'>→ 搜狐科技</a></div>
       </div>
       <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>Era0 VLA模型正式发布</div>
-            <div class='work-desc'>实现VLA与世界模型深度融合，在双臂协同、柔性物体操作、多视角感知等核心维度均位列前茅。模型权重开源。</div>
-            <div class='work-meta'><span class='work-date'>2026.04.10</span> <a class='work-link' href='https://www.robotera.com' target='_blank'>→ 星动纪元官网</a></div>
-          </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-hw'></span>完成近5亿元A轮融资，交付超200台</div>
-            <div class='work-desc'>鼎晖VGC和海尔资本联合领投，产品交付超200台，上百个订单量产交付中。</div>
-            <div class='work-meta'><span class='work-date'>2026.01.20</span> <a class='work-link' href='https://www.robotera.com' target='_blank'>→ 星动纪元官网</a></div>
+            <div class='work-title'><span class='work-dot work-dot-rongzi'></span>完成15亿元A+轮融资，3个月累计融资近50亿</div>
+            <div class='work-desc'>云锋基金、顺为资本、红杉中国等一线基金入局，估值从百亿跃升至200亿以上。</div>
+            <div class='work-meta'><span class='work-date'>2026.06.03</span> <a class='work-link' href='https://fund.eastmoney.com/a/202606033758465889.html' target='_blank'>→ 东方财富</a></div>
           </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (2)</button>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (1)</button>
       </div>
     </div><div class='card' data-type='cn' data-tags='vla hw'>
       <div class='card-header'>
         <div class='avatar av-cn'>智</div>
         <div class='card-title'>
           <h3>智元机器人 (AgiBot)</h3>
-          <div class='subtitle'>4款新品 · 成本低于人工</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-hw'>HW</span></div>
+          <div class='subtitle'>1.5万台量产 · 精灵G2 · 灵犀X2</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-hw'>HW</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-hw'></span>合作伙伴大会：发布远征A3、灵犀S2、绝尘C5、精灵E1</div>
-        <div class='work-desc'>四款新品覆盖工业装配、物流分拣、服务场景。宣布人形机器人在工业上下料场景综合成本已低于人工，2026年营收目标5亿元。</div>
-        <div class='work-meta'><span class='work-date'>2026.04.17</span> <a class='work-link' href='https://www.agibot.com' target='_blank'>→ 智元官网</a></div>
+        <div class='work-title'><span class='work-dot work-dot-hw'></span>第1.5万台机器人下线，精灵G2交付龙旗科技</div>
+        <div class='work-desc'>不足3月从1万台到1.5万台，刷新全球人形机器人量产纪录。6天直播99.99%成功率，1.7万件平板质检。</div>
+        <div class='work-meta'><span class='work-date'>2026.06.28</span> <a class='work-link' href='https://finance.sina.com.cn/roll/2026-06-28/doc-inieykzn3656593.shtml' target='_blank'>→ 科创板日报</a></div>
       </div>
       <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>AgiBot OS 2.0发布</div>
-            <div class='work-desc'>支持多模态指令理解、长时序任务规划、跨场景零样本泛化，在工业装配和物流服务场景取得规模化落地。</div>
+            <div class='work-title'><span class='work-dot work-dot-hw'></span>灵犀X2跨过万台量产门槛</div>
+            <div class='work-desc'>2026年3月突破万台，全智能灵动机器人面向工业和服务场景。</div>
             <div class='work-meta'><span class='work-date'>2026.03.01</span> <a class='work-link' href='https://www.agibot.com' target='_blank'>→ 智元官网</a></div>
-          </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-data'></span>开源AgiBot World大规模数据集</div>
-            <div class='work-desc'>覆盖数十万条真实操作轨迹，支持多场景、多任务训练，成为国内具身智能领域重要开源基准。</div>
-            <div class='work-meta'><span class='work-date'>2026.01.15</span> <a class='work-link' href='https://www.agibot.com' target='_blank'>→ 智元官网</a></div>
           </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (2)</button>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (1)</button>
+      </div>
+    </div><div class='card' data-type='cn' data-tags='vla wm hw data'>
+      <div class='card-header'>
+        <div class='avatar av-cn'>星</div>
+        <div class='card-title'>
+          <h3>星海图</h3>
+          <div class='subtitle'>G0.5开源 · Kengo人形 · B+轮20亿</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-wm'>WM</span> <span class='tag tag-hw'>HW</span> <span class='tag tag-data'>DATA</span></div>
+        </div>
+      </div>
+      <div class='card-body'>
+      <div class='work-item'>
+        <div class='work-title'><span class='work-dot work-dot-vla'></span>G0.5 VLA基础模型开源发布，零样本泛化突破</div>
+        <div class='work-desc'>实现从任务后训练到零样本泛化的跨越，新物体直接操作、新场景自主适应、新指令组合理解执行。G0.7/G1.0路线图同步公布。</div>
+        <div class='work-meta'><span class='work-date'>2026.06.16</span> <a class='work-link' href='https://so.html5.qq.com/page/real/search_news?docid=70000021_8656a30ee3894052' target='_blank'>→ 查看详情</a></div>
+      </div>
+      <div class="extra-items is-collapsed"><div class='work-item'>
+            <div class='work-title'><span class='work-dot work-dot-hw'></span>自研双足人形机器人Kengo（行客）首秀</div>
+            <div class='work-desc'>星海图全球开发者大会上完成首秀，配合G0.5和Fast-WAM实现全身控制。</div>
+            <div class='work-meta'><span class='work-date'>2026.06.16</span> <a class='work-link' href='https://so.html5.qq.com/page/real/search_news?docid=70000021_8656a30ee3894052' target='_blank'>→ 查看详情</a></div>
+          </div><div class='work-item'>
+            <div class='work-title'><span class='work-dot work-dot-wm'></span>Fast-WAM世界模型与全身控制基础模型公布</div>
+            <div class='work-desc'>世界模型Fast-WAM驱动机器人前瞻性规划，全身控制基础模型实现双足+双臂协同。</div>
+            <div class='work-meta'><span class='work-date'>2026.06.16</span> <a class='work-link' href='https://so.html5.qq.com/page/real/search_news?docid=70000021_8656a30ee3894052' target='_blank'>→ 查看详情</a></div>
+          </div><div class='work-item'>
+            <div class='work-title'><span class='work-dot work-dot-rongzi'></span>完成B+轮20亿元融资，估值突破200亿</div>
+            <div class='work-desc'>华登科技、蓝思科技等产业资本入局，刷新国产具身智能赛道新高。</div>
+            <div class='work-meta'><span class='work-date'>2026.04.02</span> <a class='work-link' href='https://news.qq.com/rain/a/20260409A02XKY00' target='_blank'>→ 查看详情</a></div>
+          </div></div>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (3)</button>
+      </div>
+    </div><div class='card' data-type='cn' data-tags='vla hw'>
+      <div class='card-header'>
+        <div class='avatar av-cn'>动</div>
+        <div class='card-title'>
+          <h3>星动纪元 (RobotEra)</h3>
+          <div class='subtitle'>端到端VLA · 2026年融资近50亿 · 估值200亿</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-hw'>HW</span></div>
+        </div>
+      </div>
+      <div class='card-body'>
+      <div class='work-item'>
+        <div class='work-title'><span class='work-dot work-dot-rongzi'></span>完成10亿元新一轮融资，2026年累计近50亿</div>
+        <div class='work-desc'>清华系具身智能公司2个月密集融资25亿元，顺丰、中国邮政持续加码，估值突破200亿。</div>
+        <div class='work-meta'><span class='work-date'>2026.07.06</span> <a class='work-link' href='https://www.163.com/dy/article/L15N8ODO05198NMR.html' target='_blank'>→ 网易科技</a></div>
+      </div>
+      <div class="extra-items is-collapsed"><div class='work-item'>
+            <div class='work-title'><span class='work-dot work-dot-vla'></span>端到端VLA模型迭代：机器人效率达人类90%</div>
+            <div class='work-desc'>软硬件协同优化+数据飞轮运转，物流分拣等场景效率从70%提升至90%。</div>
+            <div class='work-meta'><span class='work-date'>2026.02.13</span> <a class='work-link' href='https://news.qq.com/rain/a/20260213A0321J00' target='_blank'>→ 腾讯新闻</a></div>
+          </div><div class='work-item'>
+            <div class='work-title'><span class='work-dot work-dot-rongzi'></span>完成超2亿美元融资，顺丰领投</div>
+            <div class='work-desc'>估值突破100亿，联手顺丰、中国邮政落地10余个物流中心。</div>
+            <div class='work-meta'><span class='work-date'>2026.01.20</span> <a class='work-link' href='https://www.sohu.com/a/1017606656_701814' target='_blank'>→ 搜狐科技</a></div>
+          </div></div>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (2)</button>
+      </div>
+    </div><div class='card' data-type='cn' data-tags='vla hw'>
+      <div class='card-header'>
+        <div class='avatar av-cn'>平</div>
+        <div class='card-title'>
+          <h3>智平方</h3>
+          <div class='subtitle'>NeuroVLA类脑 · AlphaBrain · 估值200亿</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-hw'>HW</span></div>
+        </div>
+      </div>
+      <div class='card-body'>
+      <div class='work-item'>
+        <div class='work-title'><span class='work-dot work-dot-vla'></span>发布全球首个类脑VLA架构NeuroVLA</div>
+        <div class='work-desc'>仿生"皮层-小脑-脊髓"三层分工协同，运动抖动降低75%，碰撞后20ms反射响应，AlphaBrain Platform同步开源。</div>
+        <div class='work-meta'><span class='work-date'>2026.06.15</span> <a class='work-link' href='https://www.jiemian.com/article/14586417.html' target='_blank'>→ 界面新闻</a></div>
+      </div>
+      <div class="extra-items is-collapsed"><div class='work-item'>
+            <div class='work-title'><span class='work-dot work-dot-rongzi'></span>完成近50亿元系列融资，估值超200亿</div>
+            <div class='work-desc'>深圳具身智能独角兽一年累计13轮融资，GOVLA全域VLA大模型+AlphaBot机器人推进量产交付。</div>
+            <div class='work-meta'><span class='work-date'>2026.06.29</span> <a class='work-link' href='https://baijiahao.baidu.com/s?id=1869430282289626017' target='_blank'>→ 百度百家</a></div>
+          </div><div class='work-item'>
+            <div class='work-title'><span class='work-dot work-dot-vla'></span>AlphaBrain VLA大模型四代演进路线发布</div>
+            <div class='work-desc'>从端到端VLA到增强型VLA再到类脑VLA三阶段演进论，世界模型是VLA体系中的核心组件而非竞争路线。</div>
+            <div class='work-meta'><span class='work-date'>2026.06.08</span> <a class='work-link' href='https://www.sohu.com/a/1033666912_114822' target='_blank'>→ 搜狐科技</a></div>
+          </div></div>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (2)</button>
       </div>
     </div><div class='card' data-type='cn' data-tags='vla wm'>
       <div class='card-header'>
-        <div class='avatar av-cn'>源</div>
-        <div class='card-title'>
-          <h3>智源研究院 (BAAI)</h3>
-          <div class='subtitle'>RoboBrain 2.0 · 开放世界感知</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-wm'>WM</span></div>
-        </div>
-      </div>
-      <div class='card-body'>
-      <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-vla'></span>RoboBrain 2.0发布：开放世界感知能力升级</div>
-        <div class='work-desc'>支持开放词汇场景理解、物体功能推理、长时序任务规划，在多项评测中超越Google RT-2和Meta LLAMA-Adapter。</div>
-        <div class='work-meta'><span class='work-date'>2026.05.04</span> <a class='work-link' href='https://www.baaivision.org' target='_blank'>→ 智源官网</a></div>
-      </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-wm'></span>WorldBrain世界模型持续迭代</div>
-            <div class='work-desc'>在隐空间中预测未来状态，支持机器人动作规划与闭环控制，在GRUtopia评测中取得领先。</div>
-            <div class='work-meta'><span class='work-date'>2026.02.01</span> <a class='work-link' href='https://www.baaivision.org' target='_blank'>→ 智源官网</a></div>
-          </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-sim'></span>GRUtopia 2.0发布，百万级室内场景生成</div>
-            <div class='work-desc'>支持语义标注、物理属性、人体姿态的全自动场景生成，为具身智能训练提供大规模高质量仿真环境。</div>
-            <div class='work-meta'><span class='work-date'>2025.12.10</span> <a class='work-link' href='https://grutopia.org' target='_blank'>→ GRUtopia官网</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (2)</button>
-      </div>
-    </div><div class='card' data-type='cn' data-tags='wm'>
-      <div class='card-header'>
-        <div class='avatar av-cn'>极</div>
+        <div class='avatar av-cn'>佳</div>
         <div class='card-title'>
           <h3>极佳视界</h3>
-          <div class='subtitle'>GigaWorld-1 · 世界生成模型</div>
-          <div class='card-tags'><span class='tag tag-wm'>WM</span></div>
+          <div class='subtitle'>GigaBrain VLA · 世界模型独角兽 · 3个月融资35亿</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-wm'>WM</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-wm'></span>GigaWorld-1世界生成模型发布</div>
-        <div class='work-desc'>10B参数，支持具身智能全景视频生成与未来状态预测，在RoboNet评测超越Genie 2和DreamerV3。支持从视频数据学习世界动力学。</div>
-        <div class='work-meta'><span class='work-date'>2026.03.15</span> <a class='work-link' href='https://www.jijiasj.com' target='_blank'>→ 极佳视界官网</a></div>
+        <div class='work-title'><span class='work-dot work-dot-rongzi'></span>完成B2轮10亿元融资，3个月累计融资35亿</div>
+        <div class='work-desc'>狮城资本、中比基金、建投投资等国家队与产业资本加持，国内首个世界模型独角兽。</div>
+        <div class='work-meta'><span class='work-date'>2026.07.04</span> <a class='work-link' href='https://www.sohu.com/a/1045935697_121124731' target='_blank'>→ 搜狐科技</a></div>
       </div>
       <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-wm'></span>Ctrl-World：可控制世界模型框架</div>
-            <div class='work-desc'>通过条件化生成实现可控的世界状态预测，为机器人提供可规划的仿真预览能力。</div>
-            <div class='work-meta'><span class='work-date'>2026.01.20</span> <a class='work-link' href='https://www.jijiasj.com' target='_blank'>→ 极佳视界官网</a></div>
+            <div class='work-title'><span class='work-dot work-dot-wm'></span>GigaBrain-0.5M*自我进化VLA大模型拿下世界第一</div>
+            <div class='work-desc'>世界模型预测未来状态驱动机器人决策，叠衣、冲咖啡等真实任务接近100%成功率，性能超越主流基线30%。</div>
+            <div class='work-meta'><span class='work-date'>2026.02.14</span> <a class='work-link' href='https://hub.baai.ac.cn/view/52604' target='_blank'>→ 智源Hub</a></div>
           </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (1)</button>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (1)</button>
       </div>
-    </div><div class='card' data-type='cn' data-tags='hw'>
+    </div><div class='card' data-type='cn' data-tags='hw vla'>
       <div class='card-header'>
         <div class='avatar av-cn'>宇</div>
         <div class='card-title'>
           <h3>宇树科技 (Unitree)</h3>
-          <div class='subtitle'>GD01载人机甲 · App Store</div>
-          <div class='card-tags'><span class='tag tag-hw'>HW</span></div>
+          <div class='subtitle'>科创板IPO获批 · G1/H1人形 · 具身智能第一股</div>
+          <div class='card-tags'><span class='tag tag-hw'>HW</span> <span class='tag tag-vla'>VLA</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-hw'></span>GD01载人变形机甲发布，390万元起</div>
-        <div class='work-desc'>全球首款量产版载人变形机甲，打破科幻与现实的边界。同步展示人形机器人运动控制最新进展。</div>
-        <div class='work-meta'><span class='work-date'>2026.05.12</span> <a class='work-link' href='https://www.unitree.com' target='_blank'>→ 宇树官网</a></div>
+        <div class='work-title'><span class='work-dot work-dot-rongzi'></span>科创板IPO注册获批，104天闪电过会</div>
+        <div class='work-desc'>3月20日受理、6月1日过会、7月2日注册获批，A股将迎来"具身智能第一股"，拟募资42.02亿。</div>
+        <div class='work-meta'><span class='work-date'>2026.07.02</span> <a class='work-link' href='https://baijiahao.baidu.com/s?id=1869968747747361884' target='_blank'>→ 百度百家</a></div>
       </div>
       <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-hw'></span>开放全球首个人形机器人任务动作应用商店</div>
-            <div class='work-desc'>开发者可上传、下载机器人任务动作包，推动生态建设。上交所已于5月18日启动IPO辅导。</div>
-            <div class='work-meta'><span class='work-date'>2026.05.07</span> <a class='work-link' href='https://www.unitree.com' target='_blank'>→ 宇树官网</a></div>
-          </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-hw'></span>G1/H1人形机器人量产交付持续推进</div>
-            <div class='work-desc'>G1定价9.9万元起成为性价比标杆，H1全尺寸通用人形机器人已在多个工业场景完成试点。</div>
-            <div class='work-meta'><span class='work-date'>2026.03.01</span> <a class='work-link' href='https://www.unitree.com' target='_blank'>→ 宇树官网</a></div>
+            <div class='work-title'><span class='work-dot work-dot-hw'></span>G1人形机器人持续迭代，CES 2026海外首秀</div>
+            <div class='work-desc'>全尺寸通用人形机器人，在CES 2026上完整展示产品线，运动控制与操作能力全面升级。</div>
+            <div class='work-meta'><span class='work-date'>2026.01.10</span> <a class='work-link' href='https://www.unitree.com' target='_blank'>→ 宇树官网</a></div>
           </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (2)</button>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (1)</button>
       </div>
     </div><div class='card' data-type='cn' data-tags='vla'>
       <div class='card-header'>
-        <div class='avatar av-cn'>智</div>
+        <div class='avatar av-cn'>界</div>
         <div class='card-title'>
-          <h3>智在无界 (RaiLL)</h3>
-          <div class='subtitle'>RynnBrain 2.0 · 商业化落地</div>
+          <h3>智在无界 (BeingBeyond)</h3>
+          <div class='subtitle'>RynnBrain VLA · 100+城商业落地</div>
           <div class='card-tags'><span class='tag tag-vla'>VLA</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-vla'></span>RynnBrain 2.0发布：100+城商业落地</div>
-        <div class='work-desc'>在共享出行、本地生活、城市服务三大场景实现规模化落地，日订单突破500万，成为具身智能商业化标杆。</div>
-        <div class='work-meta'><span class='work-date'>2025.11.15</span> <a class='work-link' href='https://www.raill.ai' target='_blank'>→ 智在无界官网</a></div>
+        <div class='work-title'><span class='work-dot work-dot-vla'></span>RynnBrain 2.0发布，100+城商业落地</div>
+        <div class='work-desc'>VLA端到端统一架构，日订单突破500万，覆盖配送、零售、清洁等场景。</div>
+        <div class='work-meta'><span class='work-date'>2026.03.01</span> <a class='work-link' href='https://research.beingbeyond.com/' target='_blank'>→ 智在无界官网</a></div>
       </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>RynnBrain 1.5端侧推理优化</div>
-            <div class='work-desc'>在嵌入式设备上实现毫秒级推理响应，支持实时环境感知与决策，降低部署成本50%。</div>
-            <div class='work-meta'><span class='work-date'>2025.09.01</span> <a class='work-link' href='https://www.raill.ai' target='_blank'>→ 智在无界官网</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (1)</button>
+      
       </div>
     </div><div class='card' data-type='cn' data-tags='vla data'>
       <div class='card-header'>
         <div class='avatar av-cn'>灵</div>
         <div class='card-title'>
-          <h3>灵初智能 (PsiBot)</h3>
-          <div class='subtitle'>SynData 1.46万下载 · 10万小时数据</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-data'>DATA</span></div>
+          <h3>灵初智能</h3>
+          <div class='subtitle'>VLA全面综述 · PKU-SynData</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-data'>DATA</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-data'></span>SynData数据集HuggingFace下载量达1.46万次</div>
-        <div class='work-desc'>业界最大灵巧手全模态数据集，覆盖多物体、多场景、多视角真机+仿真操作数据。总数据储备达10万小时。</div>
-        <div class='work-meta'><span class='work-date'>2026.05.13</span> <a class='work-link' href='https://huggingface.co/datasets/PsiBotAI/SynData' target='_blank'>→ HuggingFace</a></div>
+        <div class='work-title'><span class='work-dot work-dot-vla'></span>北大-灵初发布具身VLA全面综述</div>
+        <div class='work-desc'>一文看清VLA技术路线与前沿进展，灵初智能联合创始人陈源培与北大杨耀东共同担任通讯作者。</div>
+        <div class='work-meta'><span class='work-date'>2026.02.10</span> <a class='work-link' href='https://www.pku.edu.cn' target='_blank'>→ 北京大学</a></div>
       </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>Psi-R2和Psi-W0模型发布</div>
-            <div class='work-desc'>Psi-R2是首个使用10万小时级人类数据训练的VLA模型，在灵巧操作任务上取得SOTA。与SynData协同形成数据-模型闭环。</div>
-            <div class='work-meta'><span class='work-date'>2026.04.10</span> <a class='work-link' href='https://www.psibot.com' target='_blank'>→ 灵初智能官网</a></div>
-          </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-data'></span>灵初智能Ego-centric数据采集方案公布</div>
-            <div class='work-desc'>基于头戴式设备的第一人称视角数据采集方案，效率比传统遥操作提升10倍，支持多场景快速部署。</div>
-            <div class='work-meta'><span class='work-date'>2026.02.20</span> <a class='work-link' href='https://www.psibot.com' target='_blank'>→ 灵初智能官网</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (2)</button>
-      </div>
-    </div><div class='card' data-type='cn' data-tags='vla'>
-      <div class='card-header'>
-        <div class='avatar av-cn'>千</div>
-        <div class='card-title'>
-          <h3>千问机器人 (Qwen)</h3>
-          <div class='subtitle'>G0系列全面开源 · 端侧部署</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span></div>
-        </div>
-      </div>
-      <div class='card-body'>
-      <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-vla'></span>G0 Tiny 0.5B端侧VLA模型发布</div>
-        <div class='work-desc'>全球首个亚十亿参数VLA模型，专为机器人端侧部署优化，算力需求压缩至1/10，在保持高泛化能力的同时实现实时推理。</div>
-        <div class='work-meta'><span class='work-date'>2026.03.20</span> <a class='work-link' href='https://github.com/QwenLM/Qwen2.5-VL' target='_blank'>→ GitHub</a></div>
-      </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>G0系列全面开源：G0/Plus/Tiny三款模型</div>
-            <div class='work-desc'>基于Qwen2.5-VL构建，G0 Plus（7B）实现单策略多本体泛化，GitHub获星9.8k+。</div>
-            <div class='work-meta'><span class='work-date'>2025.10.20</span> <a class='work-link' href='https://github.com/QwenLM/Qwen2.5-VL' target='_blank'>→ GitHub</a></div>
-          </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>G0 Plus 7B升级：更强的跨本体泛化</div>
-            <div class='work-desc'>在15+机器人本体上完成评测，零样本跨本体迁移性能提升40%，成为跨本体VLA的参考基线。</div>
-            <div class='work-meta'><span class='work-date'>2026.01.15</span> <a class='work-link' href='https://github.com/QwenLM/Qwen2.5-VL' target='_blank'>→ GitHub</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (2)</button>
-      </div>
-    </div><div class='card' data-type='cn' data-tags='vla data'>
-      <div class='card-header'>
-        <div class='avatar av-cn'>星</div>
-        <div class='card-title'>
-          <h3>星海图</h3>
-          <div class='subtitle'>投资鲸跃动力 · 数据闭环</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-data'>DATA</span></div>
-        </div>
-      </div>
-      <div class='card-body'>
-      <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-vla'></span>独家领投鲸跃动力数千万元种子轮</div>
-        <div class='work-desc'>鲸跃动力以"数据+模型+末端执行"闭环提供Robo Labor，与星海图战略协同推进数据生态建设。</div>
-        <div class='work-meta'><span class='work-date'>2026.05.19</span> <a class='work-link' href='https://news.pedaily.cn/202605/564081.shtml' target='_blank'>→ 投资界</a></div>
-      </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-data'></span>数据采标体系升级：量化质检SOP</div>
-            <div class='work-desc'>建立跨本体预训练数据集，从源头保障数据质量与模型可迁移性，为行业提供标准化数据采标解决方案。</div>
-            <div class='work-meta'><span class='work-date'>2026.04.01</span> <a class='work-link' href='https://www.xinghaitu.com' target='_blank'>→ 星海图官网</a></div>
-          </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>星海图VLA模型在工业场景落地</div>
-            <div class='work-desc'>在电子装配和汽车零部件分拣场景完成部署验证，操作精度达到99.2%。</div>
-            <div class='work-meta'><span class='work-date'>2026.02.15</span> <a class='work-link' href='https://www.xinghaitu.com' target='_blank'>→ 星海图官网</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (2)</button>
+      
       </div>
     </div><div class='card' data-type='cn' data-tags='vla hw'>
       <div class='card-header'>
@@ -1155,7 +665,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica
         <div class='card-title'>
           <h3>开普勒机器人</h3>
           <div class='subtitle'>VTLA力触觉融合 · K2量产</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-hw'>HW</span></div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-hw'>HW</span></div>
         </div>
       </div>
       <div class='card-body'>
@@ -1164,12 +674,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica
         <div class='work-desc'>全尺寸通用人形机器人，针对工业装配场景优化，已在多家汽车主机厂完成试点验证。</div>
         <div class='work-meta'><span class='work-date'>2026.03.01</span> <a class='work-link' href='https://www.gotokepler.com' target='_blank'>→ 开普勒官网</a></div>
       </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>VTLA力触觉融合VLA模型发布</div>
-            <div class='work-desc'>专为工业场景设计，Zero-Shot适配新工件，在上海汽车工厂试点落地。OmniTac多维触觉传感器同步发布。</div>
-            <div class='work-meta'><span class='work-date'>2025.10.05</span> <a class='work-link' href='https://www.gotokepler.com' target='_blank'>→ 开普勒官网</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (1)</button>
+      
       </div>
     </div><div class='card' data-type='cn' data-tags='vla hw'>
       <div class='card-header'>
@@ -1177,7 +682,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica
         <div class='card-title'>
           <h3>腾讯 Robotics X</h3>
           <div class='subtitle'>HY-Embodied · 五轮小五</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-hw'>HW</span></div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-hw'>HW</span></div>
         </div>
       </div>
       <div class='card-body'>
@@ -1186,12 +691,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica
         <div class='work-desc'>基于混元大模型构建的具身VLA模型，支持多模态指令理解与机器人动作生成，模型权重与推理代码已开源。</div>
         <div class='work-meta'><span class='work-date'>2026.02.01</span> <a class='work-link' href='https://tairos.tencent.com' target='_blank'>→ 腾讯AI Lab</a></div>
       </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-hw'></span>五轮小五机器人持续迭代</div>
-            <div class='work-desc'>四足+轮式混合底盘设计，在复杂室内外环境中展现出色移动操作能力。</div>
-            <div class='work-meta'><span class='work-date'>2026.01.15</span> <a class='work-link' href='https://roboticsx.tencent.com' target='_blank'>→ 腾讯Robotics X</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (1)</button>
+      
       </div>
     </div><div class='card' data-type='cn' data-tags='vla hw'>
       <div class='card-header'>
@@ -1199,7 +699,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica
         <div class='card-title'>
           <h3>小米 (Mimo Labs)</h3>
           <div class='subtitle'>MiMo-Embodied · CyberOne</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-hw'>HW</span></div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-hw'>HW</span></div>
         </div>
       </div>
       <div class='card-body'>
@@ -1208,12 +708,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica
         <div class='work-desc'>跨自动驾驶与具身智能的统一基础模型，实现多模态感知与动作生成的端到端融合。</div>
         <div class='work-meta'><span class='work-date'>2026.01.10</span> <a class='work-link' href='https://github.com/MiMo-AI' target='_blank'>→ 小米GitHub</a></div>
       </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-hw'></span>CyberOne人形机器人新一代发布</div>
-            <div class='work-desc'>运动控制能力全面升级，步行速度提升40%，全身自由度增加至40+。</div>
-            <div class='work-meta'><span class='work-date'>2025.12.01</span> <a class='work-link' href='https://www.xiaomi.com' target='_blank'>→ 小米官网</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (1)</button>
+      
       </div>
     </div><div class='card' data-type='cn' data-tags='vla hw'>
       <div class='card-header'>
@@ -1221,7 +716,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica
         <div class='card-title'>
           <h3>小鹏汽车 (IRON)</h3>
           <div class='subtitle'>IRON人形机器人 · 工厂试点</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-hw'>HW</span></div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-hw'>HW</span></div>
         </div>
       </div>
       <div class='card-body'>
@@ -1230,316 +725,328 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica
         <div class='work-desc'>专为汽车工厂场景设计，融合小鹏自动驾驶感知算法与机器人操作能力，已在广州黄埔工厂试点。</div>
         <div class='work-meta'><span class='work-date'>2026.03.01</span> <a class='work-link' href='https://www.xiaopeng.com' target='_blank'>→ 小鹏汽车官网</a></div>
       </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>VLA模型融合自动驾驶感知能力</div>
-            <div class='work-desc'>将小鹏XNGP感知算法迁移至机器人VLA模型，在复杂动态工业环境中实现高精度物体识别与操作规划。</div>
-            <div class='work-meta'><span class='work-date'>2026.02.01</span> <a class='work-link' href='https://www.xiaopeng.com' target='_blank'>→ 小鹏汽车官网</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (1)</button>
+      
+      </div>
+    </div><div class='card' data-type='cn' data-tags='vla hw'>
+      <div class='card-header'>
+        <div class='avatar av-cn'>无</div>
+        <div class='card-title'>
+          <h3>无界动力</h3>
+          <div class='subtitle'>3亿首轮融资 · 通用具身机器人</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-hw'>HW</span></div>
+        </div>
+      </div>
+      <div class='card-body'>
+      <div class='work-item'>
+        <div class='work-title'><span class='work-dot work-dot-rongzi'></span>完成3亿元首轮融资，红杉中国、高瓴创投领投</div>
+        <div class='work-desc'>通用具身智能机器人公司，地平线、华业天成等跟投。</div>
+        <div class='work-meta'><span class='work-date'>2026.02.10</span> <a class='work-link' href='https://www.bjnews.com.cn/detail/1762825032169141.html' target='_blank'>→ 新京报</a></div>
+      </div>
+      
       </div>
     </div><div class='card' data-type='intl' data-tags='vla hw'>
       <div class='card-header'>
         <div class='avatar av-intl'>F</div>
         <div class='card-title'>
           <h3>Figure AI</h3>
-          <div class='subtitle'>物流分拣100h直播 · Helix模型</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-hw'>HW</span></div>
+          <div class='subtitle'>Figure 03 · BMW工厂 · Helix模型</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-hw'>HW</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-hw'></span>Figure 03三台机器人物流分拣100小时直播</div>
-        <div class='work-desc'>Bob、Frank、Gary三台Figure 03在物流仓库连续作业100小时+，累计处理超13万个包裹，零人工干预。</div>
-        <div class='work-meta'><span class='work-date'>2026.05.14</span> <a class='work-link' href='https://www.figure.ai' target='_blank'>→ Figure AI官网</a></div>
+        <div class='work-title'><span class='work-dot work-dot-hw'></span>Figure 03 BMW Spartanburg工厂物流排序部署</div>
+        <div class='work-desc'>继Figure 02车身车间试点后，Figure 03承担物流复杂排序任务，从非标容器中精准抓取零部件。</div>
+        <div class='work-meta'><span class='work-date'>2026.06.25</span> <a class='work-link' href='https://www.press.bmwgroup.com/global/article/detail/T0458778EN/' target='_blank'>→ BMW官方</a></div>
       </div>
       <div class="extra-items is-collapsed"><div class='work-item'>
+            <div class='work-title'><span class='work-dot work-dot-hw'></span>Figure 03三台机器人物流分拣100小时直播</div>
+            <div class='work-desc'>Bob、Frank、Gary连续作业100小时+，累计处理超13万个包裹，零人工干预。</div>
+            <div class='work-meta'><span class='work-date'>2026.05.14</span> <a class='work-link' href='https://www.figure.ai' target='_blank'>→ Figure AI官网</a></div>
+          </div><div class='work-item'>
             <div class='work-title'><span class='work-dot work-dot-vla'></span>Figure 03 VLA模型更新：多机器人协同</div>
-            <div class='work-desc'>同一大脑控制多台机器人协同完成复杂任务，在仓库分拣场景中实现多机协作，展现规模化部署潜力。</div>
+            <div class='work-desc'>同一大脑控制多台机器人协同完成复杂任务，仓库分拣场景多机协作。</div>
             <div class='work-meta'><span class='work-date'>2026.05.01</span> <a class='work-link' href='https://www.figure.ai' target='_blank'>→ Figure AI官网</a></div>
           </div><div class='work-item'>
             <div class='work-title'><span class='work-dot work-dot-vla'></span>Helix大语言-视觉-动作统一模型发布</div>
-            <div class='work-desc'>将大语言模型、视觉理解和动作控制统一到单一架构中，支持开放词汇指令理解和复杂任务分解。</div>
+            <div class='work-desc'>将大语言模型、视觉理解和动作控制统一到单一架构，支持开放词汇指令理解和复杂任务分解。</div>
             <div class='work-meta'><span class='work-date'>2026.04.20</span> <a class='work-link' href='https://www.figure.ai' target='_blank'>→ Figure AI官网</a></div>
-          </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-hw'></span>Figure 03量产加速，BMW产线部署扩大</div>
-            <div class='work-desc'>在BMW Spartanburg工厂的部署规模从5台扩大至50台+，覆盖更多装配工位。</div>
-            <div class='work-meta'><span class='work-date'>2026.03.10</span> <a class='work-link' href='https://www.figure.ai' target='_blank'>→ Figure AI官网</a></div>
           </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (3)</button>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (3)</button>
       </div>
-    </div><div class='card' data-type='intl' data-tags='vla'>
+    </div><div class='card' data-type='intl' data-tags='vla wm'>
       <div class='card-header'>
         <div class='avatar av-intl'>π</div>
         <div class='card-title'>
           <h3>Physical Intelligence</h3>
           <div class='subtitle'>π0.7 · 涌现能力 · RL Token · MEM</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-wm'>WM</span></div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-wm'>WM</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
         <div class='work-title'><span class='work-dot work-dot-vla'></span>π0.7发布：具有涌现能力的可引导模型</div>
-        <div class='work-desc'>首次展现组合泛化能力，能将不同任务中学到的技能重新组合解决新问题。在多项评测中超越π0.5和RT-2，成为当前最强VLA基座模型。</div>
+        <div class='work-desc'>首次展现组合泛化能力，能将不同任务中学到的技能重新组合解决新问题。在多项评测中超越π0.5和RT-2。</div>
         <div class='work-meta'><span class='work-date'>2026.04.17</span> <a class='work-link' href='https://www.pi.website/blog/pi07' target='_blank'>→ pi website</a></div>
       </div>
       <div class="extra-items is-collapsed"><div class='work-item'>
             <div class='work-title'><span class='work-dot work-dot-vla'></span>RL Token (RLT)：在线强化学习的精准操作</div>
-            <div class='work-desc'>专门改进需要细粒度操作的精密微妙任务，仅需几分钟到几小时真实世界经验即可完成学习，训练速度较π*0.6提升3倍。</div>
-            <div class='work-meta'><span class='work-date'>2026.03.19</span> <a class='work-link' href='https://vuink.com/post/culfvpnyvagryyvtrapr-d-dpbzcnal/research/rlt' target='_blank'>→ PI Research</a></div>
+            <div class='work-desc'>专门改进细粒度操作的精密任务，仅需几分钟到几小时真实世界经验即可完成学习，训练速度较π*0.6提升3倍。</div>
+            <div class='work-meta'><span class='work-date'>2026.03.19</span> <a class='work-link' href='https://www.pi.website/research/rlt' target='_blank'>→ PI Research</a></div>
           </div><div class='work-item'>
             <div class='work-title'><span class='work-dot work-dot-wm'></span>MEM：VLAs with Long and Short-Term Memory</div>
-            <div class='work-desc'>结合密集短期视觉token与压缩长期语言摘要，使VLA模型能够解决需要长达15分钟记忆跨度的任务，有效应对部分可观测性。</div>
+            <div class='work-desc'>结合密集短期视觉token与压缩长期语言摘要，使VLA模型能够解决需要长达15分钟记忆跨度的任务。</div>
             <div class='work-meta'><span class='work-date'>2026.03.03</span> <a class='work-link' href='https://www.pi.website/research/memory' target='_blank'>→ pi website</a></div>
-          </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>π0.5发布：开放世界泛化与组合推理</div>
-            <div class='work-desc'>2025年发布的π0.5融合多场景异构数据训练，能完成从未专项训练的任务，展现"组合泛化"能力。模型权重与训练代码全面开源。</div>
-            <div class='work-meta'><span class='work-date'>2025.xx.xx</span> <a class='work-link' href='https://www.pi.website' target='_blank'>→ pi website</a></div>
           </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (3)</button>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (2)</button>
       </div>
-    </div><div class='card' data-type='intl' data-tags='sim vla'>
+    </div><div class='card' data-type='intl' data-tags='sim vla wm'>
       <div class='card-header'>
         <div class='avatar av-intl'>N</div>
         <div class='card-title'>
           <h3>Nvidia (Isaac Lab)</h3>
-          <div class='subtitle'>Isaac Lab 5.0 · 万卡并行</div>
-          <div class='card-tags'><span class='tag tag-sim'>SIM</span><span class='tag tag-vla'>VLA</span></div>
+          <div class='subtitle'>Cosmos 3 · GR00T N1.7 · Isaac Lab 5.0</div>
+          <div class='card-tags'><span class='tag tag-sim'>SIM</span> <span class='tag tag-vla'>VLA</span> <span class='tag tag-wm'>WM</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-sim'></span>Isaac Lab 5.0发布：万卡级并行训练</div>
-        <div class='work-desc'>全新分布式训练架构支持万卡级GPU并行，将训练从"周"压缩到"小时"级。Omniverse 3.0同步发布。</div>
-        <div class='work-meta'><span class='work-date'>2026.01.15</span> <a class='work-link' href='https://developer.nvidia.com/isaac' target='_blank'>→ Nvidia技术博客</a></div>
+        <div class='work-title'><span class='work-dot work-dot-wm'></span>Cosmos 3发布：全球首个开源物理AI基础模型</div>
+        <div class='work-desc'>GTC台北发布，Mixture-of-Transformers架构，打通视觉、语言、动作、物理模拟全模态，面向物理AI开放。</div>
+        <div class='work-meta'><span class='work-date'>2026.05.31</span> <a class='work-link' href='https://nvidianews.nvidia.com/news/nvidia-expands-open-model-families-to-power-the-next-wave-of-agentic-physical-and-healthcare-ai' target='_blank'>→ NVIDIA News</a></div>
       </div>
       <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>Nvidia VLA参考实现开源</div>
-            <div class='work-desc'>基于Isaac Lab的完整VLA训练流水线开源，集成pi0、G0等主流模型架构。</div>
-            <div class='work-meta'><span class='work-date'>2025.12.01</span> <a class='work-link' href='https://github.com/NVIDIA/isaac-lab' target='_blank'>→ GitHub</a></div>
+            <div class='work-title'><span class='work-dot work-dot-vla'></span>GR00T N1.7 Early Access + 学术参考平台发布</div>
+            <div class='work-desc'>新VLM backbone(Cosmos-Reason2-2B/Qwen3-VL)，LeRobot集成，面向学术研究的完整软硬件参考平台。</div>
+            <div class='work-meta'><span class='work-date'>2026.06.01</span> <a class='work-link' href='https://blogs.nvidia.cn/blog/nvidia-open-humanoid-robot-reference-design/' target='_blank'>→ NVIDIA官方</a></div>
           </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-sim'></span>Nvidia Project GR00T人形机器人基础模型更新</div>
-            <div class='work-desc'>支持多模态感知融合与全身运动控制，在1000+仿真场景中完成预训练，零样本真机迁移成功率提升30%。</div>
-            <div class='work-meta'><span class='work-date'>2026.03.20</span> <a class='work-link' href='https://developer.nvidia.com/isaac' target='_blank'>→ Nvidia技术博客</a></div>
+            <div class='work-title'><span class='work-dot work-dot-sim'></span>Isaac Lab 5.0 + Isaac Lab-Arena评测平台</div>
+            <div class='work-desc'>万卡级GPU并行训练，Omniverse 3.0同步发布，Isaac Lab-Arena提供标准化机器人评测。</div>
+            <div class='work-meta'><span class='work-date'>2026.01.15</span> <a class='work-link' href='https://developer.nvidia.com/isaac' target='_blank'>→ NVIDIA技术博客</a></div>
           </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (2)</button>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (2)</button>
+      </div>
+    </div><div class='card' data-type='intl' data-tags='hw vla'>
+      <div class='card-header'>
+        <div class='avatar av-intl'>T</div>
+        <div class='card-title'>
+          <h3>Tesla (Optimus)</h3>
+          <div class='subtitle'>Optimus Gen-3量产 · Fremont产线启动</div>
+          <div class='card-tags'><span class='tag tag-hw'>HW</span> <span class='tag tag-vla'>VLA</span></div>
+        </div>
+      </div>
+      <div class='card-body'>
+      <div class='work-item'>
+        <div class='work-title'><span class='work-dot work-dot-hw'></span>Optimus产线启动：Musk晒Fremont工厂团队合影</div>
+        <div class='work-desc'>Optimus Gen-3低量生产7-8月启动，Model S/X产线已转产机器人，Giga Texas大型Optimus工厂在建。</div>
+        <div class='work-meta'><span class='work-date'>2026.07.01</span> <a class='work-link' href='https://www.teslarati.com/tesla-optimus-project-fires-up-musk-sees-production-line-progress/' target='_blank'>→ Teslarati</a></div>
+      </div>
+      <div class="extra-items is-collapsed"><div class='work-item'>
+            <div class='work-title'><span class='work-dot work-dot-hw'></span>1000+台Optimus Gen-3在Fremont工厂内部运行</div>
+            <div class='work-desc'>内部测试与AI训练，2026年1月Gen-3量产活动开始，Fremont产线转换进行中。</div>
+            <div class='work-meta'><span class='work-date'>2026.04.01</span> <a class='work-link' href='https://elonbuzz.com/tesla-optimus-project-fires-up-as-musk-sees-production-line-progress/' target='_blank'>→ ElonBuzz</a></div>
+          </div></div>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (1)</button>
+      </div>
+    </div><div class='card' data-type='intl' data-tags='vla hw'>
+      <div class='card-header'>
+        <div class='avatar av-intl'>1</div>
+        <div class='card-title'>
+          <h3>1X Technologies</h3>
+          <div class='subtitle'>NEO Home Robot · Redwood AI · 首批交付</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-hw'>HW</span></div>
+        </div>
+      </div>
+      <div class='card-body'>
+      <div class='work-item'>
+        <div class='work-title'><span class='work-dot work-dot-hw'></span>NEO首批消费者交付：全球首款家用人形机器人</div>
+        <div class='work-desc'>NEO Home Robot定价$5.5万，Redwood AI驱动，折叠衣物、整理房间等家务任务，持续学习进化。</div>
+        <div class='work-meta'><span class='work-date'>2026.06.11</span> <a class='work-link' href='https://www.1x.tech/neo' target='_blank'>→ 1X官网</a></div>
+      </div>
+      <div class="extra-items is-collapsed"><div class='work-item'>
+            <div class='work-title'><span class='work-dot work-dot-hw'></span>NEO Gamma开启量产交付</div>
+            <div class='work-desc'>3个月建成机器人工厂，柔性织物包覆设计，噪声控制优化。</div>
+            <div class='work-meta'><span class='work-date'>2026.05.01</span> <a class='work-link' href='https://1x.tech' target='_blank'>→ 1X官网</a></div>
+          </div></div>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (1)</button>
       </div>
     </div><div class='card' data-type='intl' data-tags='vla wm'>
       <div class='card-header'>
         <div class='avatar av-intl'>G</div>
         <div class='card-title'>
           <h3>Google DeepMind</h3>
-          <div class='subtitle'>Gemini Robotics-ER · RT-X</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-wm'>WM</span></div>
+          <div class='subtitle'>Gemini Robotics · RT-2 · 开放数据</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-wm'>WM</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-vla'></span>Gemini Robotics-ER 1.6发布</div>
-        <div class='work-desc'>专为具身智能设计的推理优先模型，支持复杂长时序任务规划，在多模态感知与物理推理上取得突破。</div>
-        <div class='work-meta'><span class='work-date'>2026.04.15</span> <a class='work-link' href='https://deepmind.google' target='_blank'>→ Google DeepMind</a></div>
+        <div class='work-title'><span class='work-dot work-dot-vla'></span>Gemini Robotics发布：基于Gemini 2.0的VLA模型</div>
+        <div class='work-desc'>首个将Gemini多模态大模型直接用于机器人控制的系统，端到端架构替代传统"感知-规划-执行"分离式设计。</div>
+        <div class='work-meta'><span class='work-date'>2026.03.27</span> <a class='work-link' href='https://deepmind.google/models/gemini-robotics/' target='_blank'>→ DeepMind官网</a></div>
       </div>
       <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-data'></span>Open X-Embodiment 2.0数据集发布</div>
-            <div class='work-desc'>58个机构的200万+真实机器人轨迹，新增多语言指令和跨本体标注。</div>
+            <div class='work-title'><span class='work-dot work-dot-data'></span>Open X-Embodiment 2.0发布：200万+真实机器人轨迹</div>
+            <div class='work-desc'>全球最大开放机器人数据集，支持跨本体VLA模型训练。</div>
             <div class='work-meta'><span class='work-date'>2026.01.10</span> <a class='work-link' href='https://ai.googleblog.com' target='_blank'>→ Google Research</a></div>
-          </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>RT-3发布：VLA模型3.0时代</div>
-            <div class='work-desc'>基于PaLM-E和PaLI-X的VLA实例，在Open X-Embodiment评测中全面领先。</div>
-            <div class='work-meta'><span class='work-date'>2025.09.10</span> <a class='work-link' href='https://ai.googleblog.com' target='_blank'>→ Google AI</a></div>
           </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (2)</button>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (1)</button>
       </div>
-    </div><div class='card' data-type='intl' data-tags='hw vla'>
+    </div><div class='card' data-type='intl' data-tags='vla hw sim'>
       <div class='card-header'>
-        <div class='avatar av-intl'>1X</div>
+        <div class='avatar av-intl'>Ge</div>
         <div class='card-title'>
-          <h3>1X Technologies</h3>
-          <div class='subtitle'>NEO Gamma量产 · 机器人工厂</div>
-          <div class='card-tags'><span class='tag tag-hw'>HW</span><span class='tag tag-vla'>VLA</span></div>
+          <h3>Genesis AI</h3>
+          <div class='subtitle'>GENE-26.5 · 机器人基础模型 · 灵巧操作</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-hw'>HW</span> <span class='tag tag-sim'>SIM</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-hw'></span>NEO Gamma量产交付，3个月建成机器人工厂</div>
-        <div class='work-desc'>在1万份预订后仅用3个月在加州建成人形机器人工厂，NEO Gamma正式交付首批用户，定价5.5万美元。</div>
-        <div class='work-meta'><span class='work-date'>2026.04.30</span> <a class='work-link' href='https://1x.tech' target='_blank'>→ 1X官网</a></div>
+        <div class='work-title'><span class='work-dot work-dot-vla'></span>GENE-26.5发布：首个机器人基础模型系统</div>
+        <div class='work-desc'>单模型让机器人自主打蛋、弹钢琴、切番茄、解魔方，全程1倍速自主运行。灵巧机器人手+仿真评测平台同步发布。</div>
+        <div class='work-meta'><span class='work-date'>2026.05.06</span> <a class='work-link' href='https://robohub.app/zh/news/genesis-ai-gene-26-5-robot-manipulation' target='_blank'>→ RoboHub</a></div>
       </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>NEO VLA模型：家庭场景专项优化</div>
-            <div class='work-desc'>支持自然语言指令理解、日常物品操作、人机安全交互，在零样本新物体泛化上表现出色。</div>
-            <div class='work-meta'><span class='work-date'>2026.02.01</span> <a class='work-link' href='https://1x.tech' target='_blank'>→ 1X官网</a></div>
-          </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-hw'></span>EVE机器人升级：商用清洁场景部署</div>
-            <div class='work-desc'>EVE轮式机器人已在北欧多个商业建筑完成清洁服务部署，单机日服务面积达5000平米。</div>
-            <div class='work-meta'><span class='work-date'>2026.03.15</span> <a class='work-link' href='https://1x.tech' target='_blank'>→ 1X官网</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (2)</button>
+      
       </div>
     </div><div class='card' data-type='intl' data-tags='vla'>
       <div class='card-header'>
         <div class='avatar av-intl'>S</div>
         <div class='card-title'>
           <h3>Skild AI</h3>
-          <div class='subtitle'>Skild Brain · 3亿美元A轮</div>
+          <div class='subtitle'>Skild Brain · 14亿美元C轮 · 估值$14B</div>
           <div class='card-tags'><span class='tag tag-vla'>VLA</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-vla'></span>Skild Brain：多机器人统一基础模型</div>
-        <div class='work-desc'>卡内基梅隆大学背景团队打造，支持多机器人、多任务统一策略，零样本跨本体迁移突破。A轮融资3亿美元，估值10亿美元。</div>
-        <div class='work-meta'><span class='work-date'>2025.11.10</span> <a class='work-link' href='https://www.skild.ai' target='_blank'>→ Skild AI官网</a></div>
+        <div class='work-title'><span class='work-dot work-dot-rongzi'></span>完成14亿美元C轮融资，估值突破14亿美元</div>
+        <div class='work-desc'>SoftBank领投，18个月内完成最大机器人融资轮次，构建行业首个统一机器人基础模型Skild Brain。</div>
+        <div class='work-meta'><span class='work-date'>2026.01.14</span> <a class='work-link' href='https://www.businesswire.com/news/home/20260114335623/en/Skild-AI-Raises-%241.4B-Now-Valued-Over-%2414B' target='_blank'>→ BusinessWire</a></div>
       </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>Skild Brain 2.0：引入世界模型组件</div>
-            <div class='work-desc'>在基础模型中集成世界模型预测模块，提升长时序任务规划能力。在Kitchen、TableTop等评测中超越pi0.5。</div>
-            <div class='work-meta'><span class='work-date'>2026.01.20</span> <a class='work-link' href='https://www.skild.ai' target='_blank'>→ Skild AI官网</a></div>
-          </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-data'></span>Skild数据引擎：跨本体统一数据采集</div>
-            <div class='work-desc'>发布跨30+机器人本体的统一数据采集流水线，支持自动化数据质量评估与标注。</div>
-            <div class='work-meta'><span class='work-date'>2026.03.15</span> <a class='work-link' href='https://www.skild.ai' target='_blank'>→ Skild AI官网</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (2)</button>
+      
       </div>
-    </div><div class='card' data-type='intl' data-tags='sim'>
-      <div class='card-header'>
-        <div class='avatar av-intl'>G</div>
-        <div class='card-title'>
-          <h3>Genesis</h3>
-          <div class='subtitle'>Genesis 3.0 · 微分物理引擎</div>
-          <div class='card-tags'><span class='tag tag-sim'>SIM</span></div>
-        </div>
-      </div>
-      <div class='card-body'>
-      <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-sim'></span>Genesis 3.0发布：微分物理+万级并行</div>
-        <div class='work-desc'>全新微分物理引擎支持软体+流体+织物统一建模，Python-first API。宇树/傅利叶/NVIDIA数字孪生已集成。</div>
-        <div class='work-meta'><span class='work-date'>2026.04.07</span> <a class='work-link' href='https://genesis-world.com' target='_blank'>→ Genesis官网</a></div>
-      </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-sim'></span>Genesis机器人库扩展至200+机器人</div>
-            <div class='work-desc'>新增50+人形和机械臂模型，支持URDF/MJCF一键导入，配合Isaac Lab实现跨平台仿真。</div>
-            <div class='work-meta'><span class='work-date'>2026.02.10</span> <a class='work-link' href='https://genesis-world.com' target='_blank'>→ Genesis官网</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (1)</button>
-      </div>
-    </div><div class='card' data-type='lab' data-tags='vla wm'>
+    </div><div class='card' data-type='lab' data-tags='vla data'>
       <div class='card-header'>
         <div class='avatar av-lab'>清</div>
         <div class='card-title'>
-          <h3>清华大学</h3>
-          <div class='subtitle'>RynnBrain 2.0 · 神经符号推理</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-wm'>WM</span></div>
+          <h3>清华大学 (AIR/EIR)</h3>
+          <div class='subtitle'>LDA-1B · X-VLA · 具身智能研究院</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-data'>DATA</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-vla'></span>RynnBrain 2.0：神经符号推理融合</div>
-        <div class='work-desc'>融合神经网络感知与符号推理，在长时序任务规划上取得突破。代码与模型权重开源。</div>
-        <div class='work-meta'><span class='work-date'>2026.03.05</span> <a class='work-link' href='https://www.tsinghua.edu.cn' target='_blank'>→ 清华大学官网</a></div>
+        <div class='work-title'><span class='work-dot work-dot-vla'></span>银河通用联合清华AIR发布LDA-1B，登顶RSS 2026</div>
+        <div class='work-desc'>1.6B参数WAM框架，首次在隐空间统一世界模型与VLA，虚实共融数据利用与跨本体泛化。</div>
+        <div class='work-meta'><span class='work-date'>2026.05.10</span> <a class='work-link' href='https://air.tsinghua.edu.cn/info/1007/2467.htm' target='_blank'>→ 清华AIR</a></div>
       </div>
       <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-wm'></span>清华世界模型研究：基于视频预测的动作规划</div>
-            <div class='work-desc'>通过视频预测模型学习物理规律，实现无需真机数据的动作规划，在LIBERO评测中表现优异。</div>
-            <div class='work-meta'><span class='work-date'>2026.01.10</span> <a class='work-link' href='https://www.tsinghua.edu.cn' target='_blank'>→ 清华大学官网</a></div>
-          </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>CoPa：具身场景中跨任务策略迁移</div>
-            <div class='work-desc'>提出对比策略适配方法，在12个操作任务间实现高效迁移，减少80%的微调数据需求。</div>
-            <div class='work-meta'><span class='work-date'>2025.11.20</span> <a class='work-link' href='https://www.tsinghua.edu.cn' target='_blank'>→ 清华大学官网</a></div>
+            <div class='work-title'><span class='work-dot work-dot-vla'></span>X-VLA开源：全面刷新机器人基准性能记录</div>
+            <div class='work-desc'>首个实现120min无辅助自主叠衣任务的全开源模型（公开数据、代码与权重）。</div>
+            <div class='work-meta'><span class='work-date'>2026.01.16</span> <a class='work-link' href='https://air.tsinghua.edu.cn/info/1007/2467.htm' target='_blank'>→ 清华AIR</a></div>
           </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (2)</button>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (1)</button>
       </div>
     </div><div class='card' data-type='lab' data-tags='vla data'>
       <div class='card-header'>
         <div class='avatar av-lab'>北</div>
         <div class='card-title'>
           <h3>北京大学</h3>
-          <div class='subtitle'>DaVinciTrader · PKU-SynData</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-data'>DATA</span></div>
+          <div class='subtitle'>VLA综述 · SynData · DaVinciTrader</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-data'>DATA</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-vla'></span>DaVinciTrader：交易推理赋能机器人决策</div>
-        <div class='work-desc'>将金融交易中的决策推理范式引入机器人领域，在复杂长时序任务中展现出色规划能力。</div>
-        <div class='work-meta'><span class='work-date'>2025.12.20</span> <a class='work-link' href='https://www.pku.edu.cn' target='_blank'>→ 北京大学官网</a></div>
+        <div class='work-title'><span class='work-dot work-dot-vla'></span>北大-灵初发布具身VLA全面综述</div>
+        <div class='work-desc'>一文看清VLA技术路线与前沿进展，灵初智能联合创始人陈源培与北大杨耀东共同担任通讯作者。</div>
+        <div class='work-meta'><span class='work-date'>2026.02.10</span> <a class='work-link' href='https://www.pku.edu.cn' target='_blank'>→ 北京大学官网</a></div>
       </div>
       <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-data'></span>PKU-SynData-10K高保真合成数据集</div>
-            <div class='work-desc'>1万条厨房场景合成数据，涵盖多物体、多任务、多视角，与灵初智能SynData形成互补。</div>
+            <div class='work-title'><span class='work-dot work-dot-data'></span>PKU-SynData-10K发布：1万条高保真厨房场景合成数据</div>
+            <div class='work-desc'>与灵初智能联合发布，为VLA模型训练提供高质量合成数据支撑。</div>
             <div class='work-meta'><span class='work-date'>2026.02.10</span> <a class='work-link' href='https://www.pku.edu.cn' target='_blank'>→ 北京大学官网</a></div>
-          </div><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>北大-灵初联合实验室发布Psi-R2模型</div>
-            <div class='work-desc'>首个使用10万小时级人类数据训练的VLA模型，在灵巧操作任务上取得SOTA。</div>
-            <div class='work-meta'><span class='work-date'>2026.04.01</span> <a class='work-link' href='https://www.pku.edu.cn' target='_blank'>→ 北京大学官网</a></div>
           </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (2)</button>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (1)</button>
       </div>
     </div><div class='card' data-type='lab' data-tags='vla'>
       <div class='card-header'>
         <div class='avatar av-lab'>西</div>
         <div class='card-title'>
           <h3>西湖大学</h3>
-          <div class='subtitle'>MoE-VLA · 混合专家架构</div>
+          <div class='subtitle'>MOE-VLA · 混合专家架构</div>
           <div class='card-tags'><span class='tag tag-vla'>VLA</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-vla'></span>MoE-VLA开源：混合专家架构突破数据瓶颈</div>
-        <div class='work-desc'>稀疏激活的专家子网络替代稠密Transformer，同数据量下性能提升30%，训练成本降低60%。</div>
-        <div class='work-meta'><span class='work-date'>2025.12.15</span> <a class='work-link' href='https://www.westlake.edu.cn' target='_blank'>→ 西湖大学官网</a></div>
+        <div class='work-title'><span class='work-dot work-dot-vla'></span>MOE-VLA开源：混合专家架构突破数据瓶颈</div>
+        <div class='work-desc'>通过混合专家机制实现数据高效利用，在有限训练数据下实现跨场景泛化。</div>
+        <div class='work-meta'><span class='work-date'>2026.03.01</span> <a class='work-link' href='https://www.westlake.edu.cn' target='_blank'>→ 西湖大学官网</a></div>
       </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>MoE-VLA 2.0：动态专家路由优化</div>
-            <div class='work-desc'>引入任务感知的动态专家路由机制，在LIBERO和RoboTask评测中进一步刷新SOTA。</div>
-            <div class='work-meta'><span class='work-date'>2026.03.10</span> <a class='work-link' href='https://www.westlake.edu.cn' target='_blank'>→ 西湖大学官网</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (1)</button>
+      
       </div>
-    </div><div class='card' data-type='lab' data-tags='sim vla'>
+    </div><div class='card' data-type='lab' data-tags='vla data sim'>
       <div class='card-header'>
         <div class='avatar av-lab'>B</div>
         <div class='card-title'>
           <h3>UC Berkeley</h3>
-          <div class='subtitle'>数字表亲 · 形态无关操控</div>
-          <div class='card-tags'><span class='tag tag-sim'>SIM</span><span class='tag tag-vla'>VLA</span></div>
+          <div class='subtitle'>数字表亲 · RoboArena评测 · Open X-Embodiment</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-data'>DATA</span> <span class='tag tag-sim'>SIM</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-sim'></span>数字表亲（Digital Cousins）框架</div>
-        <div class='work-desc'>通过仿真到真实的形态无关映射，大幅降低跨本体Sim2Real差距，在LIBERO和FurnitureBench取得SOTA。</div>
-        <div class='work-meta'><span class='work-date'>2026.01.25</span> <a class='work-link' href='https://berkeley.edu' target='_blank'>→ UC Berkeley官网</a></div>
+        <div class='work-title'><span class='work-dot work-dot-sim'></span>数字表亲框架发布：大幅降低跨本体Sim2Real差距</div>
+        <div class='work-desc'>通过生成"数字表亲"而非精确数字孪生，实现低成本跨本体迁移。</div>
+        <div class='work-meta'><span class='work-date'>2026.01.25</span> <a class='work-link' href='https://berkeley.edu' target='_blank'>→ UC Berkeley</a></div>
       </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>Berkeley VLA：视觉-语言-动作统一模型</div>
-            <div class='work-desc'>基于LLaVA构建的VLA模型，在多任务泛化和零样本操作上取得领先，代码开源。</div>
-            <div class='work-meta'><span class='work-date'>2026.03.20</span> <a class='work-link' href='https://berkeley.edu' target='_blank'>→ UC Berkeley官网</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (1)</button>
+      
       </div>
-    </div><div class='card' data-type='lab' data-tags='data vla'>
+    </div><div class='card' data-type='lab' data-tags='vla data'>
       <div class='card-header'>
         <div class='avatar av-lab'>S</div>
         <div class='card-title'>
           <h3>Stanford</h3>
-          <div class='subtitle'>Behavior-1K · MOO多本体匹配</div>
-          <div class='card-tags'><span class='tag tag-data'>DATA</span><span class='tag tag-vla'>VLA</span></div>
+          <div class='subtitle'>Ego-Pi · MOO多本体 · Behavior-1K</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-data'>DATA</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-data'></span>Behavior-1K数据集：千种日常行为基准</div>
-        <div class='work-desc'>1000种日常行为的120万+视频片段，为通用机器人行为理解提供标准化评测基准。</div>
-        <div class='work-meta'><span class='work-date'>2025.10.28</span> <a class='work-link' href='https://behavior.stanford.edu' target='_blank'>→ Stanford</a></div>
+        <div class='work-title'><span class='work-dot work-dot-vla'></span>Ego-Pi：VLA微调的ego-centric人类视角方法</div>
+        <div class='work-desc'>CVPR 2026发表，专注于ego-centric视角的VLA微调方法，提升第一人称操作任务性能。</div>
+        <div class='work-meta'><span class='work-date'>2026.06.03</span> <a class='work-link' href='https://www.aib.vote/en/news/stanford-ai-lab-cvpr-2026-research' target='_blank'>→ Stanford AI Lab</a></div>
       </div>
       <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>MOO：多本体操作最优匹配框架</div>
+            <div class='work-title'><span class='work-dot work-dot-vla'></span>MOO多本体操作最优匹配框架</div>
             <div class='work-desc'>解决跨本体训练中形态差异导致的性能损失，在9种机器人本体上实现统一策略训练。</div>
             <div class='work-meta'><span class='work-date'>2026.02.15</span> <a class='work-link' href='https://stanford.edu' target='_blank'>→ Stanford</a></div>
           </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (1)</button>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (1)</button>
+      </div>
+    </div><div class='card' data-type='lab' data-tags='vla wm'>
+      <div class='card-header'>
+        <div class='avatar av-lab'>源</div>
+        <div class='card-title'>
+          <h3>智源研究院 (BAAI)</h3>
+          <div class='subtitle'>SoulAgent · 智源大会 · VISTA世界模型</div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-wm'>WM</span></div>
+        </div>
+      </div>
+      <div class='card-body'>
+      <div class='work-item'>
+        <div class='work-title'><span class='work-dot work-dot-vla'></span>SoulAgent亮相2026全球数字经济大会</div>
+        <div class='work-desc'>智源推出的个人智能体产品，在6月智源大会完成万人级实战验证，7月正式亮相数字经济大会。</div>
+        <div class='work-meta'><span class='work-date'>2026.07.02</span> <a class='work-link' href='http://www.zqrb.cn/gscy/qiyexinxi/2026-07-02/A1782955137529.html' target='_blank'>→ 证券日报</a></div>
+      </div>
+      <div class="extra-items is-collapsed"><div class='work-item'>
+            <div class='work-title'><span class='work-dot work-dot-wm'></span>2026智源大会：具身智能CEO华山论剑</div>
+            <div class='work-desc'>6月12-13日北京举办，200+顶尖专家与40+AI企业CEO，聚焦Agent、世界模型、具身智能、AI自进化。</div>
+            <div class='work-meta'><span class='work-date'>2026.06.12</span> <a class='work-link' href='https://hub.baai.ac.cn/view/55174' target='_blank'>→ 智源Hub</a></div>
+          </div></div>
+      <button class="expand-toggle" onclick="toggleCard(this)">↓ 展开更多 (1)</button>
       </div>
     </div><div class='card' data-type='lab' data-tags='vla wm'>
       <div class='card-header'>
@@ -1547,21 +1054,16 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica
         <div class='card-title'>
           <h3>中科院自动化所</h3>
           <div class='subtitle'>VLA-R1 · 世界模型+RL</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-wm'>WM</span></div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-wm'>WM</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
         <div class='work-title'><span class='work-dot work-dot-vla'></span>VLA-R1：融合世界模型与强化学习</div>
         <div class='work-desc'>隐空间统一世界模型预测与VLA动作生成，引入R1-style强化学习优化，在RoboTask评测中超越pi0。</div>
-        <div class='work-meta'><span class='work-date'>2025.11.20</span> <a class='work-link' href='https://www.ia.cas.cn' target='_blank'>→ 中科院官网</a></div>
+        <div class='work-meta'><span class='work-date'>2026.02.28</span> <a class='work-link' href='https://www.ia.cas.cn' target='_blank'>→ 中科院官网</a></div>
       </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-wm'></span>世界模型增强的机器人规划框架</div>
-            <div class='work-desc'>基于视频预测的世界模型为机器人提供前瞻性规划能力，在长时序操作任务中表现优异。</div>
-            <div class='work-meta'><span class='work-date'>2026.02.28</span> <a class='work-link' href='https://www.ia.cas.cn' target='_blank'>→ 中科院官网</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (1)</button>
+      
       </div>
     </div><div class='card' data-type='lab' data-tags='vla data'>
       <div class='card-header'>
@@ -1569,65 +1071,16 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica
         <div class='card-title'>
           <h3>鹏城实验室</h3>
           <div class='subtitle'>VidMan · 视频驱动操作</div>
-          <div class='card-tags'><span class='tag tag-vla'>VLA</span><span class='tag tag-data'>DATA</span></div>
+          <div class='card-tags'><span class='tag tag-vla'>VLA</span> <span class='tag tag-data'>DATA</span></div>
         </div>
       </div>
       <div class='card-body'>
       <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-vla'></span>VidMan：视频驱动具身操作新范式</div>
-        <div class='work-desc'>从网络规模视频中学习机器人操作策略，大幅降低对真机标注数据的依赖。</div>
-        <div class='work-meta'><span class='work-date'>2025.11.05</span> <a class='work-link' href='https://www.pcl.ac.cn' target='_blank'>→ 鹏城实验室</a></div>
+        <div class='work-title'><span class='work-dot work-dot-data'></span>大规模互联网视频数据集构建</div>
+        <div class='work-desc'>从YouTube等平台自动采集和标注百万级机器人相关视频，为VidMan提供训练数据支撑。</div>
+        <div class='work-meta'><span class='work-date'>2026.01.15</span> <a class='work-link' href='https://www.pcl.ac.cn' target='_blank'>→ 鹏城实验室</a></div>
       </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-data'></span>大规模互联网视频数据集构建</div>
-            <div class='work-desc'>从YouTube等平台自动采集和标注百万级机器人相关视频，为VidMan提供训练数据支撑。</div>
-            <div class='work-meta'><span class='work-date'>2026.01.15</span> <a class='work-link' href='https://www.pcl.ac.cn' target='_blank'>→ 鹏城实验室</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (1)</button>
-      </div>
-    </div><div class='card' data-type='lab' data-tags='sim'>
-      <div class='card-header'>
-        <div class='avatar av-lab'>浙</div>
-        <div class='card-title'>
-          <h3>浙江大学</h3>
-          <div class='subtitle'>ODYSSEY 2.0 · 万级并行</div>
-          <div class='card-tags'><span class='tag tag-sim'>SIM</span></div>
-        </div>
-      </div>
-      <div class='card-body'>
-      <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-sim'></span>ODYSSEY仿真平台2.0发布</div>
-        <div class='work-desc'>支持万级环境并行、异构机器人统一接口，在Sample Factory 2.0引擎上实现400万步/秒采集速度。</div>
-        <div class='work-meta'><span class='work-date'>2025.09.28</span> <a class='work-link' href='https://www.zju.edu.cn' target='_blank'>→ 浙江大学</a></div>
-      </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-sim'></span>ODYSSEY机器人技能库扩展</div>
-            <div class='work-desc'>新增100+预训练操作技能，支持技能组合与迁移，覆盖厨房、实验室、仓库等场景。</div>
-            <div class='work-meta'><span class='work-date'>2026.01.10</span> <a class='work-link' href='https://www.zju.edu.cn' target='_blank'>→ 浙江大学</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (1)</button>
-      </div>
-    </div><div class='card' data-type='lab' data-tags='sim vla'>
-      <div class='card-header'>
-        <div class='avatar av-lab'>C</div>
-        <div class='card-title'>
-          <h3>CMU Robotics</h3>
-          <div class='subtitle'>形态无关操控 · 跨本体迁移</div>
-          <div class='card-tags'><span class='tag tag-sim'>SIM</span><span class='tag tag-vla'>VLA</span></div>
-        </div>
-      </div>
-      <div class='card-body'>
-      <div class='work-item'>
-        <div class='work-title'><span class='work-dot work-dot-sim'></span>形态无关操控（Morphology-Agnostic Control）</div>
-        <div class='work-desc'>单一策略控制不同形态机器人，在零样本跨本体迁移上取得突破。代码与预训练模型开源。</div>
-        <div class='work-meta'><span class='work-date'>2025.11.28</span> <a class='work-link' href='https://www.ri.cmu.edu' target='_blank'>→ CMU官网</a></div>
-      </div>
-      <div class="extra-items is-collapsed"><div class='work-item'>
-            <div class='work-title'><span class='work-dot work-dot-vla'></span>ALOHA 2.0：低成本遥操作数据采集升级</div>
-            <div class='work-desc'>改进ALOHA双臂遥操作系统，新增力反馈和自动标注功能，数据采集效率提升5倍。</div>
-            <div class='work-meta'><span class='work-date'>2026.02.20</span> <a class='work-link' href='https://www.ri.cmu.edu' target='_blank'>→ CMU官网</a></div>
-          </div></div>
-      <button class="expand-toggle" onclick="toggleCard(this)">展开更多 (1)</button>
+      
       </div>
     </div>
   </div>
@@ -1635,8 +1088,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica
 </div>
 </div>  <!-- content -->
 </div>  <!-- main -->
-
 <script>
+
 // ===== SIDEBAR =====
 function toggleSidebar() {
     var sb = document.getElementById('sidebar');
@@ -1644,7 +1097,7 @@ function toggleSidebar() {
     var btn = document.getElementById('sidebarToggle');
     sb.classList.toggle('collapsed');
     mn.classList.toggle('expanded');
-    btn.textContent = sb.classList.contains('collapsed') ? '»' : '«';
+    btn.textContent = sb.classList.contains('collapsed') ? '\u00bb' : '\u00ab';
 }
 
 // Active nav on scroll
@@ -1677,10 +1130,8 @@ var allHsItems = document.querySelectorAll('.hotspot-item');
 function loadMoreHotspots() {
     var btn = document.getElementById('loadMoreBtn');
     if (!hsExpanded) {
-        // Expand: show all matching items
         allHsItems.forEach(function(item) {
             if (item.style.display === 'none') {
-                // Check if it matches current filter
                 if (item.matchesHsFilter !== false) {
                     var searchBox = document.querySelector('.hotspot-controls .search-box');
                     var searchVal = searchBox ? searchBox.value.toLowerCase() : '';
@@ -1691,11 +1142,9 @@ function loadMoreHotspots() {
             }
         });
         hsExpanded = true;
-        btn.textContent = '↑ 收起';
+        btn.textContent = '\u2191 \u6536\u8d77';
     } else {
-        // Collapse: reset to first 10 visible items
         var visibleItems = Array.from(allHsItems).filter(function(it) { return it.style.display !== 'none'; });
-        // Hide items from index 10 onward
         var count = 0;
         for (var i = 0; i < visibleItems.length; i++) {
             count++;
@@ -1709,7 +1158,6 @@ function loadMoreHotspots() {
 }
 
 function resetHsView() {
-    // Hide items beyond first 10 visible
     var visibleItems = Array.from(allHsItems).filter(function(it) { return it.style.display !== 'none'; });
     var count = 0;
     for (var i = 0; i < visibleItems.length; i++) {
@@ -1769,16 +1217,16 @@ function updateLoadMoreBtn() {
     if (visible.length <= 10) {
         var allHidden = allHsItems.length - visible.length;
         btn.style.display = (allHidden <= 0) ? 'none' : '';
-        btn.textContent = '↓ 加载更多 (' + (allHsItems.length - visible.length) + '条)';
+        btn.textContent = '\u2193 \u52a0\u8f7d\u66f4\u591a (' + (allHsItems.length - visible.length) + '\u6761)';
         hsExpanded = false;
     } else {
         if (hsExpanded) {
             btn.style.display = '';
-            btn.textContent = '↑ 收起';
+            btn.textContent = '\u2191 \u6536\u8d77';
         } else {
             btn.style.display = '';
             var hiddenCount = visible.length - 10;
-            btn.textContent = '↓ 加载更多 (' + hiddenCount + '条)';
+            btn.textContent = '\u2193 \u52a0\u8f7d\u66f4\u591a (' + hiddenCount + '\u6761)';
         }
     }
 }
@@ -1826,14 +1274,15 @@ function toggleCard(btn) {
     if (container.classList.contains('is-collapsed')) {
         container.classList.remove('is-collapsed');
         container.classList.add('is-expanded');
-        btn.textContent = '▲ 收起';
+        btn.textContent = '\u25b2 \u6536\u8d77';
     } else {
         container.classList.remove('is-expanded');
         container.classList.add('is-collapsed');
         var count = container.querySelectorAll('.work-item').length;
-        btn.textContent = '↓ 展开更多 (' + count + ')';
+        btn.textContent = '\u2193 \u5c55\u5f00\u66f4\u591a (' + count + ')';
     }
 }
+
 </script>
 </body>
 </html>
